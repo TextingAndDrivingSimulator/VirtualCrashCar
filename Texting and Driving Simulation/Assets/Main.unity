@@ -1555,6 +1555,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 881187688}
   - {fileID: 2147088135}
+  delayInSeconds: 5
   speed: 0.1
   moveToNextWayPointWhenThisClose: 2
 --- !u!4 &1522095472

@@ -9,20 +9,28 @@ public class MoveObjectAlongWaypoints : MonoBehaviour {
 
 	public Transform[] waypoints;
 
+	public int delayInSeconds = 0;
+
 	public float speed = 1.0F;
 	private float startTime;
 	private float journeyLength;
 	private int currentWaypointIndex = 0;
+	private bool interpolating = false;
 	void Start() {
-		startNewInterpolation ();
+		
+		Invoke ("startNewInterpolation", delayInSeconds);
 	}
 
+
 	void Update() {
-		updateCurrentInterpolation ();
-		startNewInterpolationIfOldIsDone ();
+		if (interpolating) {
+			updateCurrentInterpolation ();
+			startNewInterpolationIfOldIsDone ();
+		}
 	}
 
 	void startNewInterpolation() {
+		interpolating = true;
 		waypointToMoveGameObjectTo = waypoints [currentWaypointIndex];
 		startTime = Time.time;
 		journeyLength = Vector3.Distance(objectToBeMoved.transform.position, waypointToMoveGameObjectTo.position);
