@@ -6,6 +6,7 @@ public class MoveObjectAlongWaypoints : MonoBehaviour {
 	public GameObject objectToBeMoved;
 
 	private Transform waypointToMoveGameObjectTo;	
+	private Vector3 startPosition;
 
 	public Transform[] waypoints;
 
@@ -33,6 +34,7 @@ public class MoveObjectAlongWaypoints : MonoBehaviour {
 		interpolating = true;
 		waypointToMoveGameObjectTo = waypoints [currentWaypointIndex];
 		startTime = Time.time;
+		startPosition = objectToBeMoved.transform.position;
 		journeyLength = Vector3.Distance(objectToBeMoved.transform.position, waypointToMoveGameObjectTo.position);
 	}
 
@@ -52,7 +54,7 @@ public class MoveObjectAlongWaypoints : MonoBehaviour {
 	void updateCurrentInterpolation() {
 	
 		float fracJourney = getFracJourney ();
-		objectToBeMoved.transform.position = Vector3.Lerp(objectToBeMoved.transform.position, waypointToMoveGameObjectTo.position, fracJourney);
+		objectToBeMoved.transform.position = Vector3.Lerp(startPosition, waypointToMoveGameObjectTo.position, fracJourney);
 		objectToBeMoved.transform.rotation = Quaternion.Lerp (objectToBeMoved.transform.rotation, waypointToMoveGameObjectTo.rotation, fracJourney);
 	}
 
