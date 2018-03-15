@@ -1850,10 +1850,10 @@ BoxCollider:
   m_GameObject: {fileID: 324322129}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.49, z: 0}
+  m_Size: {x: 1.7160062, y: 1, z: 3.1167715}
+  m_Center: {x: -0.004882799, y: 0.4900153, z: 0.17371762}
 --- !u!114 &324322136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2447,6 +2447,7 @@ GameObject:
   - component: {fileID: 435593600}
   - component: {fileID: 435593602}
   - component: {fileID: 435593601}
+  - component: {fileID: 435593603}
   m_Layer: 0
   m_Name: Tire_Front_L
   m_TagString: Untagged
@@ -2513,6 +2514,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 435593599}
   m_Mesh: {fileID: 4300022, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+--- !u!136 &435593603
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435593599}
+  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.33878845
+  m_Height: 0.67757404
+  m_Direction: 1
+  m_Center: {x: -0.000028021634, y: -0.0000009536743, z: 0.000061541796}
 --- !u!1 &470469354
 GameObject:
   m_ObjectHideFlags: 0
@@ -4274,6 +4288,7 @@ GameObject:
   - component: {fileID: 834885362}
   - component: {fileID: 834885364}
   - component: {fileID: 834885363}
+  - component: {fileID: 834885365}
   m_Layer: 0
   m_Name: Tire_Front_R
   m_TagString: Untagged
@@ -4340,6 +4355,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 834885361}
   m_Mesh: {fileID: 4300020, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+--- !u!136 &834885365
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834885361}
+  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.33878845
+  m_Height: 0.67757404
+  m_Direction: 1
+  m_Center: {x: -0.000033013523, y: -0.0000009536743, z: 0.000060528517}
 --- !u!1 &852013442
 GameObject:
   m_ObjectHideFlags: 0
@@ -6930,6 +6958,7 @@ GameObject:
   - component: {fileID: 1466934077}
   - component: {fileID: 1466934079}
   - component: {fileID: 1466934078}
+  - component: {fileID: 1466934080}
   m_Layer: 0
   m_Name: Tire_Back_L
   m_TagString: Untagged
@@ -6996,6 +7025,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1466934076}
   m_Mesh: {fileID: 4300026, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+--- !u!136 &1466934080
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466934076}
+  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.33878845
+  m_Height: 0.67757404
+  m_Direction: 1
+  m_Center: {x: 0.0000024959443, y: -0.0000011920929, z: 0.000061541796}
 --- !u!1 &1479503534
 GameObject:
   m_ObjectHideFlags: 0
@@ -8048,6 +8090,7 @@ GameObject:
   - component: {fileID: 1617490016}
   - component: {fileID: 1617490018}
   - component: {fileID: 1617490017}
+  - component: {fileID: 1617490019}
   m_Layer: 0
   m_Name: Tire_Back_R
   m_TagString: Untagged
@@ -8114,6 +8157,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1617490015}
   m_Mesh: {fileID: 4300024, guid: 3eed8165b861f444cbb8fe297fefedd7, type: 3}
+--- !u!136 &1617490019
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617490015}
+  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.33878845
+  m_Height: 0.67757404
+  m_Direction: 1
+  m_Center: {x: -0.0000024959443, y: -0.0000011920929, z: 0.000060528517}
 --- !u!1 &1621678301
 GameObject:
   m_ObjectHideFlags: 0
