@@ -14,12 +14,12 @@ public class DemeritCount : MonoBehaviour {
 	public Text demeritCount;
 	int count;
 
-	void Start () {
+	 void Start () {
 		demeritCount.text = "Demerits: 0";
 		count = 0;
 	}
 
-	void Update () {
+	 void Update () {
 		//Whenever user hits object, update count appropriately
 
 
@@ -32,6 +32,6 @@ public class DemeritCount : MonoBehaviour {
 
 
 		//Display new count
-		demeritCount.text = "Demerits: " + count.ToString();
+		demeritCount.text = "Demerits: " + (GoingOffRoadDemeritCounter.getDemerits () + count) .ToString();
 	}
 }
