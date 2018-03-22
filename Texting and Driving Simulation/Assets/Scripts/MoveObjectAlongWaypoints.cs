@@ -13,13 +13,24 @@ public class MoveObjectAlongWaypoints : MonoBehaviour {
 
 	public float delayInSeconds = 0;
 
+	public Transform startAtWaypoint = null;
+
 	public float speed = 1.0F;
 	private float startTime;
 	private float journeyLength;
 	private int currentWaypointIndex = 0;
 	private bool interpolating = false;
 	void Start() {
-		
+		// If the start waypoint isn't null, search through the list for our start point and then skip to it!
+		if (startAtWaypoint != null) {
+			for (int i = 0; i != waypoints.Length; ++i) {
+				if (startAtWaypoint ==  (waypoints [i])) {
+					Debug.Log ("Found the waypoint!");
+					currentWaypointIndex = i;
+					break;
+				}
+			}
+		}
 		Invoke ("startNewInterpolation", delayInSeconds);
 	}
 
