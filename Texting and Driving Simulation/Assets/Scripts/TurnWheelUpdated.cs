@@ -10,8 +10,8 @@ public class TurnWheelUpdated : MonoBehaviour {
 	void Update () {
 		//FIX LOCAL XYZ POSITION
 
-		//Vector3 newPosition = new Vector3 (-0.406f, -0.119f, -3.54f);
-		//transform.localPosition = newPosition;
+		Vector3 newPosition = new Vector3 (-0.406f, -0.119f, -0.354f);
+		transform.localPosition = newPosition;
 
 		//Is this how I lock rotation about y and z?
 		//this.transform.localRotation = Quaternion.Euler(0,x,0);
@@ -22,7 +22,7 @@ public class TurnWheelUpdated : MonoBehaviour {
 
 		//FIX LOCAL YZ ROTATION
 		float tiltAroundX = Input.GetAxis("Horizontal") * tiltAngle;
-		Quaternion target = Quaternion.Euler(tiltAroundX, 0 , 0); //is the order z, x, y?
+		Quaternion target = Quaternion.Euler(tiltAroundX-90, 0 , -90); //is the order z, x, y?
 		this.transform.localRotation = Quaternion.Slerp(this.transform.localRotation, target, Time.deltaTime * smooth);
 
 	}

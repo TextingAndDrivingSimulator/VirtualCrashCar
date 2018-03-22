@@ -40,6 +40,7 @@ public class ControllerGrabObject : MonoBehaviour {
 	// 1
 	public void OnTriggerEnter(Collider other)
 	{
+        Debug.Log("Found collider " + other);
 		SetCollidingObject(other);
 	}
 
@@ -52,6 +53,7 @@ public class ControllerGrabObject : MonoBehaviour {
 	// 3
 	public void OnTriggerExit(Collider other)
 	{
+        Debug.Log("Lost collider " + other);
 		if (!collidingObject)
 		{
 			return;
