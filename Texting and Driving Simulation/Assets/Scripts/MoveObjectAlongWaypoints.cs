@@ -11,7 +11,7 @@ public class MoveObjectAlongWaypoints : MonoBehaviour {
 
 	public Transform[] waypoints;
 
-	public int delayInSeconds = 0;
+	public float delayInSeconds = 0;
 
 	public float speed = 1.0F;
 	private float startTime;
