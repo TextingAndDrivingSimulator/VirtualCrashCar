@@ -10,17 +10,21 @@ public class GoingOffRoadDemeritCounter : MonoBehaviour {
 		return demerits;
 	}
 
-	private bool playerInside = false;
+	private static bool playerInside = false;
+    static int leave = 0;
 	public void OnTriggerEnter(Collider c) {
 		
-		if (c.CompareTag ("Player") && !playerInside) {
+		if (c.CompareTag ("Player") && !playerInside && leave == 0) {
 			demerits += increaseDemeritScore;
 			playerInside = true;
+        
 		}
-	}
+        leave += 1;
+    }
 
 	public void OnTriggerExit(Collider c) {
 		playerInside = false;
+        leave -= 1;
 	}
 
 }
