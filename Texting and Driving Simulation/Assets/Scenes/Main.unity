@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41860926, g: 0.5555527, b: 0.6842196, a: 1}
+  m_IndirectSpecularColor: {r: 0.41862404, g: 0.5551671, b: 0.6838967, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -92362,6 +92362,7 @@ GameObject:
   - component: {fileID: 1968118749}
   - component: {fileID: 1968118748}
   - component: {fileID: 1968118747}
+  - component: {fileID: 1968118752}
   m_Layer: 0
   m_Name: User Car (1)
   m_TagString: Player
@@ -92485,6 +92486,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: -120.239006, z: 0}
+--- !u!114 &1968118752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1968118746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151291b590f97d7408517673a1630290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: COM5
+  baudrate: 9600
 --- !u!1 &1969003689
 GameObject:
   m_ObjectHideFlags: 0

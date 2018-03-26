@@ -33,13 +33,13 @@ namespace UnityStandardAssets.Vehicles.Car
         {
             // pass the input to the car!
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
-			Debug.Log ("Keyboard is " + h);
+		
 
 			float wheel_rotation = drive.outAngle;
-			Debug.Log ("Raw wheel is " + wheel_rotation);
+			
 			wheel_rotation /= 360.0f;
 			wheel_rotation = normalizeToOne (wheel_rotation);
-			Debug.Log("Wheel is " + wheel_rotation);
+		
 
 			h += wheel_rotation;
 			h = normalizeToOne (h);
