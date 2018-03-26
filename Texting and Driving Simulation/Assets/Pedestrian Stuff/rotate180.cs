@@ -6,6 +6,7 @@ public class rotate180 : MonoBehaviour {
 
     public float distance1;
     public float distance2;
+    public int stopPoint;
 
 	// Use this for initialization
 	void Start () {
@@ -15,15 +16,15 @@ public class rotate180 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //(transform.position.x <= -350 && transform.position.z <= 2084.64)
+
         distance2 = transform.position.x;
 
-        if ((distance1 - distance2 > 5 || distance2 - distance1 > 5) && distance2 < -346) // positon value we want to rotate character
+        if ((distance1 - distance2 > 5 || distance2 - distance1 > 5) && distance2 < stopPoint) // positon value we want to rotate character
         {
             transform.localRotation *= Quaternion.Euler(0, 180, 0);
             distance2 = distance2+1;
         }
-        else if((distance1 - distance2 > 5 || distance2 - distance1 > 5) && distance2 > -346)
+        else if((distance1 - distance2 > 5 || distance2 - distance1 > 5) && distance2 > stopPoint)
         {
             transform.localRotation *= Quaternion.Euler(0, 180, 0);
             distance2 = distance2 - 1;
