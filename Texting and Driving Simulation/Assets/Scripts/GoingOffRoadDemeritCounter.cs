@@ -10,6 +10,11 @@ public class GoingOffRoadDemeritCounter : MonoBehaviour {
 		return demerits;
 	}
 
+    public static void setDemerits(int add)
+    {
+        demerits += add;
+    }
+
 	private static bool playerInside = false;
     static int leave = 0;
 	public void OnTriggerEnter(Collider c) {

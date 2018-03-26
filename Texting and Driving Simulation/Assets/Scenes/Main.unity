@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41860926, g: 0.5555527, b: 0.6842196, a: 1}
+  m_IndirectSpecularColor: {r: 0.41862404, g: 0.5551671, b: 0.6838967, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -20438,6 +20438,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance1: 0
   distance2: 0
+--- !u!114 &374108399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374108393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &374182565
 GameObject:
   m_ObjectHideFlags: 0
@@ -23299,7 +23310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &441602647
 Transform:
   m_ObjectHideFlags: 0
@@ -29071,6 +29082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 576930997}
   - component: {fileID: 576930998}
+  - component: {fileID: 576930999}
   m_Layer: 0
   m_Name: CarInstance (2)
   m_TagString: Untagged
@@ -29366,6 +29378,17 @@ MonoBehaviour:
   startAtWaypoint: {fileID: 0}
   speed: 20
   moveToNextWayPointWhenThisClose: 0.1
+--- !u!114 &576930999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576930996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &577971208
 GameObject:
   m_ObjectHideFlags: 0
@@ -36840,6 +36863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 752991900}
   - component: {fileID: 752991901}
+  - component: {fileID: 752991902}
   m_Layer: 0
   m_Name: CarInstance (5)
   m_TagString: Untagged
@@ -37135,6 +37159,17 @@ MonoBehaviour:
   startAtWaypoint: {fileID: 1338158856}
   speed: 20
   moveToNextWayPointWhenThisClose: 0.1
+--- !u!114 &752991902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 752991899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &761303794
 GameObject:
   m_ObjectHideFlags: 0
@@ -50757,6 +50792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138010150}
   - component: {fileID: 1138010151}
+  - component: {fileID: 1138010152}
   m_Layer: 0
   m_Name: CarInstance (3)
   m_TagString: Untagged
@@ -51052,6 +51088,17 @@ MonoBehaviour:
   startAtWaypoint: {fileID: 852013443}
   speed: 20
   moveToNextWayPointWhenThisClose: 0.1
+--- !u!114 &1138010152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1138010149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1139357133
 GameObject:
   m_ObjectHideFlags: 0
@@ -69418,6 +69465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522095472}
   - component: {fileID: 1522095471}
+  - component: {fileID: 1522095473}
   m_Layer: 0
   m_Name: CarInstance
   m_TagString: Untagged
@@ -69713,6 +69761,17 @@ Transform:
   m_Father: {fileID: 765338037}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -160.21901, z: 0}
+--- !u!114 &1522095473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522095470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1522740108
 GameObject:
   m_ObjectHideFlags: 0
@@ -70106,6 +70165,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance1: 0
   distance2: 0
+--- !u!114 &1529974375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1529974369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1531477910
 GameObject:
   m_ObjectHideFlags: 0
@@ -73157,6 +73227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1600470360}
   - component: {fileID: 1600470361}
+  - component: {fileID: 1600470362}
   m_Layer: 0
   m_Name: CarInstance (4)
   m_TagString: Untagged
@@ -73452,6 +73523,17 @@ MonoBehaviour:
   startAtWaypoint: {fileID: 1338158856}
   speed: 20
   moveToNextWayPointWhenThisClose: 0.1
+--- !u!114 &1600470362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600470359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1601264861
 GameObject:
   m_ObjectHideFlags: 0
@@ -97111,6 +97193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2080390313}
   - component: {fileID: 2080390314}
+  - component: {fileID: 2080390315}
   m_Layer: 0
   m_Name: CarInstance (1)
   m_TagString: Untagged
@@ -97406,6 +97489,17 @@ MonoBehaviour:
   startAtWaypoint: {fileID: 0}
   speed: 20
   moveToNextWayPointWhenThisClose: 0.1
+--- !u!114 &2080390315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2080390312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2081152024
 GameObject:
   m_ObjectHideFlags: 0
