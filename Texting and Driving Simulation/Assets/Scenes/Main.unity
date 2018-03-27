@@ -11165,7 +11165,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &184307127
 Transform:
   m_ObjectHideFlags: 0
@@ -15649,8 +15649,6 @@ GameObject:
   - component: {fileID: 268216911}
   - component: {fileID: 268216917}
   - component: {fileID: 268216916}
-  - component: {fileID: 268216915}
-  - component: {fileID: 268216914}
   - component: {fileID: 268216913}
   - component: {fileID: 268216912}
   m_Layer: 0
@@ -15697,62 +15695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &268216914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 268216910}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c98272b1328624e1485e7fef325e939c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smooth: 2
-  tiltAngle: 30
---- !u!114 &268216915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 268216910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f32883eed859804dbb0c5fedac91496, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axisOfRotation: 1
-  childCollider: {fileID: 0}
-  linearMapping: {fileID: 0}
-  hoverLock: 0
-  limited: 1
-  frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
-  onFrozenDistanceThreshold:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  minAngle: -270
-  freezeOnMin: 0
-  onMinAngle:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  maxAngle: 270
-  freezeOnMax: 0
-  onMaxAngle:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  forceStart: 0
-  startAngle: 0
-  rotateGameObject: 1
-  debugPath: 0
-  dbgPathLimit: 50
-  debugText: {fileID: 0}
-  outAngle: 0
 --- !u!23 &268216916
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52867,7 +52809,7 @@ AudioListener:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1170946284}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &1175404226
 GameObject:
   m_ObjectHideFlags: 0
@@ -92406,7 +92348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drive: {fileID: 268216915}
+  wheel_values: {fileID: 1968118752}
+  wheelToRotate: {fileID: 268216910}
 --- !u!114 &1968118749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92497,7 +92440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151291b590f97d7408517673a1630290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  port: COM5
+  port: COM2
   baudrate: 9600
 --- !u!1 &1969003689
 GameObject:

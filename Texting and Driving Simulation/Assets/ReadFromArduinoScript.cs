@@ -27,17 +27,22 @@ public class ReadFromArduinoScript : MonoBehaviour {
     }
 
 
-    public string ReadFromArduino(int timeout = 0)
+	public int ReadFromArduino(int timeout = 0)
     {
         stream.ReadTimeout = timeout;
         try
         {
-            return stream.ReadLine();
-            // return stream.ReadByte();
+			// Bit banging. If we start adding more pheripherals,
+			// we will want to move over to just sending strings for easier parsing.
+            //return stream.ReadLine();
+			int a =  stream.ReadByte();
+			int b = stream.ReadByte();
+
+			return (b << 8) | a;
         }
         catch (TimeoutException)
         {
-            return "0";
+            return -1;
         }
     }
 
@@ -49,33 +54,35 @@ public class ReadFromArduinoScript : MonoBehaviour {
     public void Update()
     {
 
-        Debug.Log("Read from arduino" + ReadFromArduino(50));
     }
 
 
-    public IEnumerator AsynchronousReadFromArduino(Action<string> callback, Action fail = null, float timeout = float.PositiveInfinity)
+	public IEnumerator AsynchronousReadFromArduino(Action<int> callback, Action fail = null, float timeout = float.PositiveInfinity)
     {
         DateTime initialTime = DateTime.Now;
         DateTime nowTime;
         TimeSpan diff = default(TimeSpan);
 
-        string dataString = null;
+        int value = 0;
 
         do
         {
             // A single read attempt
             try
             {
-                dataString = stream.ReadLine();
+				int a =  stream.ReadByte();
+				int b = stream.ReadByte();
+
+				value =  (b << 8) | a;
             }
             catch (TimeoutException)
             {
-                dataString = null;
+				value = -1;
             }
 
-            if (dataString != null)
+            if (value != -1)
             {
-                callback(dataString);
+				callback(value);
                 yield return null;
             }
             else

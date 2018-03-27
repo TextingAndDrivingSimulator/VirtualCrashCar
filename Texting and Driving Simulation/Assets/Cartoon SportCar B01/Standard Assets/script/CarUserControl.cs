@@ -20,13 +20,16 @@ namespace UnityStandardAssets.Vehicles.Car
 		}
         private CarController m_Car; // the car controller we want to use
 
-		public CircularDrive drive;
 
         private void Awake()
         {
             // get the car controller
             m_Car = GetComponent<CarController>();
         }
+
+		public ReadFromArduinoScript wheel_values;
+
+		public GameObject wheelToRotate;
 
 
         private void FixedUpdate()
@@ -35,16 +38,20 @@ namespace UnityStandardAssets.Vehicles.Car
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
 		
 
-			float wheel_rotation = drive.outAngle;
-			
-			wheel_rotation /= 360.0f;
-			wheel_rotation = normalizeToOne (wheel_rotation);
+
+			int arduino_reading = wheel_values.ReadFromArduino (10);
+			if (arduino_reading != -1) {
+				float wheel_rotation = arduino_reading;
+				wheel_rotation -= 1023 / 2.0f;
+				wheel_rotation /= 1023 / 2.0f;
+				wheel_rotation = normalizeToOne (wheel_rotation);
 		
 
-			h += wheel_rotation;
-			h = normalizeToOne (h);
-		    
-
+				h += wheel_rotation;
+				h = normalizeToOne (h);
+			}
+			Vector3 newLocalRotation = new Vector3 (0, h * 180.0f, 0);
+			wheelToRotate.transform.localRotation = Quaternion.Euler( newLocalRotation );
             float v = CrossPlatformInputManager.GetAxis("Vertical");
 #if !MOBILE_INPUT
             float handbrake = CrossPlatformInputManager.GetAxis("Jump");
