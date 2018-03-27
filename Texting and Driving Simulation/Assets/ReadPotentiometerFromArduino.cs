@@ -6,7 +6,7 @@ using System.IO.Ports;
 
 // https://www.alanzucconi.com/2015/10/07/how-to-integrate-arduino-with-unity/
 
-public class ReadFromArduinoScript : MonoBehaviour {
+public class ReadPotentiometerFromArduino : MonoBehaviour {
 
     /* The serial port where the Arduino is connected. */
     [Tooltip("The serial port where the Arduino is connected")]

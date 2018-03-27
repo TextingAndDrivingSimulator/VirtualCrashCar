@@ -27,7 +27,7 @@ namespace UnityStandardAssets.Vehicles.Car
             m_Car = GetComponent<CarController>();
         }
 
-		public ReadFromArduinoScript wheel_values;
+		public ReadPotentiometerFromArduino wheel_values;
 
 		public GameObject wheelToRotate;
 
