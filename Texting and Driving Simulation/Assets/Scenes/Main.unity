@@ -92442,6 +92442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   port: COM2
   baudrate: 9600
+  noWheel: 1
 --- !u!1 &1969003689
 GameObject:
   m_ObjectHideFlags: 0
