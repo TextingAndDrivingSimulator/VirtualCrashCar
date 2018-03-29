@@ -29,7 +29,7 @@ public class ReadPotentiometerFromArduino : MonoBehaviour {
         }
     }
 
-
+    int lastReading = 0;
 	public int ReadFromArduino(int timeout = 0)
     {
         if (noWheel)
@@ -45,11 +45,12 @@ public class ReadPotentiometerFromArduino : MonoBehaviour {
 			int a =  stream.ReadByte();
 			int b = stream.ReadByte();
 
-			return (b << 8) | a;
+			lastReading = (b << 8) | a;
+            return lastReading;
         }
         catch (TimeoutException)
         {
-            return -1;
+            return lastReading;
         }
     }
 
