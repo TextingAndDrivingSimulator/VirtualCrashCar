@@ -19,9 +19,9 @@ public class Texting : MonoBehaviour {
 	private SteamVR_TrackedController controller;
 
 	void Start () {
-		//trackedObject = GetComponent<SteamVR_TrackedObject>();
-		//controller = GetComponent<SteamVR_TrackedController> ();
-		//controller.PadClicked += Controller_PadClicked;
+		//trackedObject = GetComponent<SteamVR_TrackedObject>();    //toggle
+		//controller = GetComponent<SteamVR_TrackedController> ();   //toggle
+		//controller.PadClicked += Controller_PadClicked;           //toggle
 
 		textMessages.text = "Welcome to your smart phone!";
 	}
@@ -33,23 +33,26 @@ public class Texting : MonoBehaviour {
 		}
 
 		//Reading out x,y values to find button selected
-		/*
+		
 		if (device.GetAxis ().x > 0 && device.GetAxis ().y > 0) {
-			//2 selected
+			//b selected
 		} else if (device.GetAxis ().x > 0 && device.GetAxis ().y < 0) {
-			//4 selected
+			//c selected
 		} else if (device.GetAxis ().x < 0 && device.GetAxis ().y > 0) {
-			//1 selected
+			//a selected
 		} else if (device.GetAxis ().x < 0 && device.GetAxis ().y < 0) {
-			//3 selected
-		}*/
+			//d selected
+		}
 
 	}
 
 	void Update () {
-		//device = SteamVR_Controller.Input ((int)trackedObject.index);
+		//device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
+        
+        //USE a,b,c,d on keyboard for testing purposes
+        /*
 		if (Input.GetMouseButtonDown (0)) {
 			textMessages.text = "Use the four buttons to select different message options.";
-		}
+		}*/
 	}
 }
