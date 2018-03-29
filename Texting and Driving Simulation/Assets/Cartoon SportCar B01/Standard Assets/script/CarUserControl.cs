@@ -31,7 +31,6 @@ namespace UnityStandardAssets.Vehicles.Car
 
 		public GameObject wheelToRotate;
 
-
         private void FixedUpdate()
         {
             // pass the input to the car!
@@ -39,7 +38,7 @@ namespace UnityStandardAssets.Vehicles.Car
 		
 
 
-			int arduino_reading = wheel_values.ReadFromArduino (10);
+			int arduino_reading = wheel_values.GetWheelCurrentValue ();
 			if (arduino_reading != -1) {
 				float wheel_rotation = arduino_reading;
 				wheel_rotation -= 1023 / 2.0f;

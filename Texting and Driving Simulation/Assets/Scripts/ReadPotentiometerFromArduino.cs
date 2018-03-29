@@ -6,7 +6,8 @@ using System.IO.Ports;
 
 // https://www.alanzucconi.com/2015/10/07/how-to-integrate-arduino-with-unity/
 
-public class ReadPotentiometerFromArduino : MonoBehaviour {
+public class ReadPotentiometerFromArduino : MonoBehaviour
+{
     /* The serial port where the Arduino is connected. */
     [Tooltip("The serial port where the Arduino is connected")]
     public string port = "COM4";
@@ -19,44 +20,62 @@ public class ReadPotentiometerFromArduino : MonoBehaviour {
 
     public void Open()
     {
-        if (!noWheel)
-        {
-            // Opens the serial port
-            stream = new SerialPort(port, baudrate);
-            stream.ReadTimeout = 50;
-            stream.Open();
-            //this.stream.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
-        }
+
+        // Opens the serial port
+        stream = new SerialPort(port, baudrate);
+        stream.ReadTimeout = 50;
+        stream.Open();
+        //this.stream.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+
     }
 
-    int lastReading = 0;
-	public int ReadFromArduino(int timeout = 0)
+    long lastReadingImpl = 1023 / 2;
+
+    public int GetWheelCurrentValue()
     {
-        if (noWheel)
-        {
-            return 1023 / 2;
-        }
+        return (int) System.Threading.Interlocked.Read(ref lastReadingImpl);
+        
+    }
+
+    public void ReadWheelValueFromSerial(int timeout = 0)
+    {
         stream.ReadTimeout = timeout;
         try
         {
-			// Bit banging. If we start adding more pheripherals,
-			// we will want to move over to just sending strings for easier parsing.
+            // Bit banging. If we start adding more pheripherals,
+            // we will want to move over to just sending strings for easier parsing.
             //return stream.ReadLine();
-			int a =  stream.ReadByte();
-			int b = stream.ReadByte();
+            int a = stream.ReadByte();
+            int b = stream.ReadByte();
 
-			lastReading = (b << 8) | a;
-            return lastReading;
+            long combined  = (b << 8) | a;
+            System.Threading.Interlocked.Exchange(ref lastReadingImpl,combined);
         }
         catch (TimeoutException)
         {
-            return lastReading;
+           // on timeout do nothing.
         }
     }
 
+    System.Threading.Thread myThread;
     public void Start()
     {
-        Open();
+        if (!noWheel)
+        {
+            Open();
+            myThread =
+                new System.Threading.Thread(new System.Threading.ThreadStart(updateReading));
+            myThread.Start();
+        }
+    }
+
+    public void updateReading()
+    {
+        while (true)
+        {
+            ReadWheelValueFromSerial(20);
+            System.Threading.Thread.Sleep(10);
+        }
     }
 
     public void Update()
@@ -65,46 +84,7 @@ public class ReadPotentiometerFromArduino : MonoBehaviour {
     }
 
 
-	public IEnumerator AsynchronousReadFromArduino(Action<int> callback, Action fail = null, float timeout = float.PositiveInfinity)
-    {
-        DateTime initialTime = DateTime.Now;
-        DateTime nowTime;
-        TimeSpan diff = default(TimeSpan);
 
-        int value = 0;
-
-        do
-        {
-            // A single read attempt
-            try
-            {
-				int a =  stream.ReadByte();
-				int b = stream.ReadByte();
-
-				value =  (b << 8) | a;
-            }
-            catch (TimeoutException)
-            {
-				value = -1;
-            }
-
-            if (value != -1)
-            {
-				callback(value);
-                yield return null;
-            }
-            else
-                yield return new WaitForSeconds(0.05f);
-
-            nowTime = DateTime.Now;
-            diff = nowTime - initialTime;
-
-        } while (diff.Milliseconds < timeout);
-
-        if (fail != null)
-            fail();
-        yield return null;
-    }
 
     public void Close()
     {
