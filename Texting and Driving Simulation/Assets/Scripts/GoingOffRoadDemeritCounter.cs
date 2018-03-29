@@ -20,7 +20,7 @@ public class GoingOffRoadDemeritCounter : MonoBehaviour {
 	
 	public void OnTriggerEnter(Collider c) {
 		
-		if (c.CompareTag ("Player") && !playerInside /*&& leave == 0*/) {
+		if (c.CompareTag ("Player") && !playerInside && leave == 0) {
 			demerits += increaseDemeritScore;
 			playerInside = true;
         
