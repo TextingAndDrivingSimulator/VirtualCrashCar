@@ -7,7 +7,6 @@ using System.IO.Ports;
 // https://www.alanzucconi.com/2015/10/07/how-to-integrate-arduino-with-unity/
 
 public class ReadPotentiometerFromArduino : MonoBehaviour {
-
     /* The serial port where the Arduino is connected. */
     [Tooltip("The serial port where the Arduino is connected")]
     public string port = "COM4";
@@ -20,11 +19,14 @@ public class ReadPotentiometerFromArduino : MonoBehaviour {
 
     public void Open()
     {
-        // Opens the serial port
-        stream = new SerialPort(port, baudrate);
-        stream.ReadTimeout = 50;
-        stream.Open();
-        //this.stream.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+        if (!noWheel)
+        {
+            // Opens the serial port
+            stream = new SerialPort(port, baudrate);
+            stream.ReadTimeout = 50;
+            stream.Open();
+            //this.stream.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+        }
     }
 
 
