@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Texting : MonoBehaviour {
 	public Text textMessages;
+	public TextBank textBank;
 
 	//****************** CITATION *********************************
 	//Inspiration for reading Vive trackpad input from YouTube Tutorial
@@ -50,9 +51,11 @@ public class Texting : MonoBehaviour {
 		//device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
         
         //USE a,b,c,d on keyboard for testing purposes
-        /*
+        
+
+		//Josh's String Testing Below
 		if (Input.GetMouseButtonDown (0)) {
-			textMessages.text = "Use the four buttons to select different message options.";
-		}*/
+			textMessages.text = textBank.s1;
+		}
 	}
 }

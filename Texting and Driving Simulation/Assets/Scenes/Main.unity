@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41862404, g: 0.5551671, b: 0.6838967, a: 1}
+  m_IndirectSpecularColor: {r: 0.41860926, g: 0.5555527, b: 0.6842196, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -10556,7 +10556,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.426
+      value: -0.049
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10564,7 +10564,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.92
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_LocalRotation.x
@@ -29469,6 +29469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToBeMoved: {fileID: 2136569550}
+  paused: 0
   waypoints:
   - {fileID: 881187688}
   - {fileID: 1795176740}
@@ -33827,6 +33828,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &677765781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 677765782}
+  - component: {fileID: 677765783}
+  m_Layer: 0
+  m_Name: TextBank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &677765782
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677765781}
+  m_LocalRotation: {x: 0.69419605, y: 0.69419605, z: 0.13450599, w: -0.13450599}
+  m_LocalPosition: {x: -4.737395, y: -4.5931416, z: 3.7985735}
+  m_LocalScale: {x: 7.7261834, y: 7.726177, z: 7.7261777}
+  m_Children: []
+  m_Father: {fileID: 823173709}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &677765783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677765781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30038e54a48149a090625c82e7e19f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s1: 
+  s2: 
+  s3: 
+  s4: 
+  s5: 
+  s6: 
+  s7: 
+  s8: 
+  s9: 
+  s10: 
+  s11: 
+  s12: 
+  s13: 
+  s14: 
 --- !u!1 &679648473
 GameObject:
   m_ObjectHideFlags: 0
@@ -36181,6 +36236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMessages: {fileID: 732834294}
+  textBank: {fileID: 1900517135}
 --- !u!1 &737782555
 GameObject:
   m_ObjectHideFlags: 0
@@ -37275,6 +37331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToBeMoved: {fileID: 1512364017}
+  paused: 0
   waypoints:
   - {fileID: 881187688}
   - {fileID: 1795176740}
@@ -43267,6 +43324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMessages: {fileID: 910750087}
+  textBank: {fileID: 677765783}
 --- !u!114 &910750087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51809,6 +51867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToBeMoved: {fileID: 1427266187}
+  paused: 0
   waypoints:
   - {fileID: 881187688}
   - {fileID: 1795176740}
@@ -70728,6 +70787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToBeMoved: {fileID: 882535017}
+  paused: 0
   waypoints:
   - {fileID: 881187688}
   - {fileID: 1795176740}
@@ -74497,6 +74557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToBeMoved: {fileID: 1631447364}
+  paused: 0
   waypoints:
   - {fileID: 881187688}
   - {fileID: 1795176740}
@@ -89388,6 +89449,60 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1900139733}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1900517133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1900517134}
+  - component: {fileID: 1900517135}
+  m_Layer: 0
+  m_Name: TextBank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900517134
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900517133}
+  m_LocalRotation: {x: 0.000000005636144, y: 0.98174155, z: -0.000000004872888, w: -0.19021985}
+  m_LocalPosition: {x: 4.564322, y: -1.2528654, z: 6.4603677}
+  m_LocalScale: {x: 7.7260337, y: 7.72603, z: 7.7260313}
+  m_Children: []
+  m_Father: {fileID: 1860294427}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900517135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1900517133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30038e54a48149a090625c82e7e19f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s1: 
+  s2: 
+  s3: 
+  s4: 
+  s5: 
+  s6: 
+  s7: 
+  s8: 
+  s9: 
+  s10: 
+  s11: 
+  s12: 
+  s13: 
+  s14: 
 --- !u!1 &1900664130
 GameObject:
   m_ObjectHideFlags: 0
@@ -98655,6 +98770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToBeMoved: {fileID: 35410225}
+  paused: 0
   waypoints:
   - {fileID: 881187688}
   - {fileID: 1795176740}
