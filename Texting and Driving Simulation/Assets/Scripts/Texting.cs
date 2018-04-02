@@ -20,6 +20,7 @@ public class Texting : MonoBehaviour {
 	private SteamVR_TrackedController controller;
 
 	public bool enableVRControls = false;
+    public int currentText;
 
 	private void VibrateController() {
 		if (enableVRControls) {
@@ -34,12 +35,14 @@ public class Texting : MonoBehaviour {
 	}
 
 	void Start () {
-		//trackedObject = GetComponent<SteamVR_TrackedObject>();    //toggle
-		//controller = GetComponent<SteamVR_TrackedController> ();   //toggle
-		//controller.PadClicked += Controller_PadClicked;           //toggle
+        //trackedObject = GetComponent<SteamVR_TrackedObject>();    //toggle
+        //controller = GetComponent<SteamVR_TrackedController> ();   //toggle
+        //controller.PadClicked += Controller_PadClicked;           //toggle
 
-		textMessages.text = "Welcome to your smart phone!";
-	}
+        //textMessages.text = "Welcome to your smart phone!";
+        textMessages.text = textBank.s1;
+        currentText = 1;
+    }
 
 	void Controller_PadClicked (object sender, ClickedEventArgs e)
 	{
@@ -70,9 +73,108 @@ public class Texting : MonoBehaviour {
             VibrateController();
         }
 
-		//Josh's String Testing Below
-		if (Input.GetMouseButtonDown (0)) {
-			textMessages.text = textBank.s14;
-		}
-	}
+		//Josh's String Testing Below (kyler commented out for testing)
+		//if (Input.GetMouseButtonDown (0)) {
+		//	textMessages.text = textBank.s14;
+        //}
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 14)
+        {
+            textMessages.text = textBank.s1;
+            currentText = 1;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 13)
+        {
+            textMessages.text = textBank.s14;
+            currentText = 14;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 12)
+        {
+            textMessages.text = textBank.s13;
+            currentText = 13;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 11)
+        {
+            textMessages.text = textBank.s13;
+            currentText = 13;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && currentText == 10)
+        {
+            textMessages.text = textBank.s11;
+            currentText = 11;
+        }
+        else if ((Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C)) && currentText == 10)
+        {
+            textMessages.text = textBank.s12;
+            currentText = 12;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 9)
+        {
+            textMessages.text = textBank.s10;
+            currentText = 10;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 8)
+        {
+            textMessages.text = textBank.s10;
+            currentText = 10;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.D)) && currentText == 7)
+        {
+            textMessages.text = textBank.s8;
+            currentText = 8;
+        }
+        else if (Input.GetKeyDown(KeyCode.C) && currentText == 7)
+        {
+            textMessages.text = textBank.s9;
+            currentText = 9;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 6)
+        {
+            textMessages.text = textBank.s7;
+            currentText = 7;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 5)
+        {
+            textMessages.text = textBank.s6;
+            currentText = 6;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 4)
+        {
+            textMessages.text = textBank.s5;
+            currentText = 5;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 3)
+        {
+            textMessages.text = textBank.s4;
+            currentText = 4;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.D)) && currentText == 2)
+        {
+            textMessages.text = textBank.s3;
+            currentText = 3;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.C)) && currentText == 1)
+        {
+            textMessages.text = textBank.s2;
+            currentText = 2;
+        }
+        else if((Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.D)) && currentText == 1){
+            textMessages.text = textBank.s5;
+            currentText = 5;
+        }
+        
+    }
 }
