@@ -22,7 +22,10 @@ public class Texting : MonoBehaviour {
 	public bool enableVRControls = false;
     public int currentText;
 
-	private void VibrateController() {
+    public AudioClip myClip;
+    public AudioSource mySource;
+
+    private void VibrateController() {
 		if (enableVRControls) {
             // Vibrate controller L
             SteamVR_Controller.Input(
@@ -40,6 +43,11 @@ public class Texting : MonoBehaviour {
         //controller.PadClicked += Controller_PadClicked;           //toggle
 
         //textMessages.text = "Welcome to your smart phone!";
+        //mySource = GetComponent<AudioSource>();
+        //mySource.Play();
+        //yield return new WaitForSeconds(mySource.clip.length);
+        
+        mySource.clip = myClip;
         textMessages.text = textBank.s1;
         currentText = 1;
     }
@@ -170,11 +178,13 @@ public class Texting : MonoBehaviour {
         {
             textMessages.text = textBank.s2;
             currentText = 2;
+            mySource.Play();
         }
         else if((Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.D)) && currentText == 1){
             textMessages.text = textBank.s5;
             currentText = 5;
+            mySource.Play();
         }
-        
+
     }
 }

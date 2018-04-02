@@ -5,7 +5,11 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - textMessages: {instanceID: 0}
+  - textBank: {instanceID: 0}
+  - myClip: {fileID: 8300000, guid: 48d4a4e6753c85f4ea2a21e4ed72a477, type: 3}
+  - mySource: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
