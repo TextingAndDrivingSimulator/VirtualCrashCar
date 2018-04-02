@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41860926, g: 0.5555527, b: 0.6842196, a: 1}
+  m_IndirectSpecularColor: {r: 0.41862404, g: 0.5551671, b: 0.6838967, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5216,6 +5216,10 @@ Prefab:
     - target: {fileID: 100004, guid: 36c373404a6674148b156e3398f0320f, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 36c373404a6674148b156e3398f0320f, type: 3}
+      propertyPath: m_TagString
+      value: AICar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36c373404a6674148b156e3398f0320f, type: 3}
@@ -13560,7 +13564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8af1b08ec7cce4d89d12b1fd9562b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.02
 --- !u!54 &215575284
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15170,7 +15174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8af1b08ec7cce4d89d12b1fd9562b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.02
 --- !u!114 &251153223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17630,7 +17634,7 @@ GameObject:
   - component: {fileID: 324322137}
   m_Layer: 8
   m_Name: TrafficCar
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17747,7 +17751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8af1b08ec7cce4d89d12b1fd9562b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.02
 --- !u!65 &324322137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17758,8 +17762,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5012712, z: 2.6207283}
-  m_Center: {x: -0.000000031354375, y: 0.49445963, z: 0.07996869}
+  m_Size: {x: 1.5544549, y: 0.50127125, z: 3.204623}
+  m_Center: {x: 0.00082361733, y: 0.4944696, z: 0.1583153}
 --- !u!114 &324322138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29438,11 +29442,11 @@ GameObject:
   - component: {fileID: 576930998}
   m_Layer: 0
   m_Name: CarInstance (2)
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &576930997
 Transform:
   m_ObjectHideFlags: 0
@@ -37300,11 +37304,11 @@ GameObject:
   - component: {fileID: 752991901}
   m_Layer: 0
   m_Name: CarInstance (5)
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &752991900
 Transform:
   m_ObjectHideFlags: 0
@@ -45648,7 +45652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8af1b08ec7cce4d89d12b1fd9562b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.02
 --- !u!54 &979425709
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50294,6 +50298,14 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1536997390485366, guid: f8b49f9d229541d43b30476c740c2477, type: 2}
+      propertyPath: m_TagString
+      value: AICar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536997390485366, guid: f8b49f9d229541d43b30476c740c2477, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8b49f9d229541d43b30476c740c2477, type: 2}
   m_IsPrefabParent: 0
@@ -51058,6 +51070,10 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3d18511415aebe4d8f507c7bc9d4c15, type: 3}
+      propertyPath: m_TagString
+      value: AICar
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3d18511415aebe4d8f507c7bc9d4c15, type: 3}
   m_IsPrefabParent: 0
@@ -51148,7 +51164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8af1b08ec7cce4d89d12b1fd9562b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.02
 --- !u!114 &1122634212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51836,11 +51852,11 @@ GameObject:
   - component: {fileID: 1138010151}
   m_Layer: 0
   m_Name: CarInstance (3)
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1138010150
 Transform:
   m_ObjectHideFlags: 0
@@ -66039,7 +66055,7 @@ GameObject:
   - component: {fileID: 1427266188}
   m_Layer: 0
   m_Name: CarToMove3
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69905,6 +69921,10 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1536997390485366, guid: f8b49f9d229541d43b30476c740c2477, type: 2}
+      propertyPath: m_TagString
+      value: AICar
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8b49f9d229541d43b30476c740c2477, type: 2}
   m_IsPrefabParent: 0
@@ -70475,7 +70495,7 @@ GameObject:
   - component: {fileID: 1512364018}
   m_Layer: 0
   m_Name: CarToMove3
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70770,11 +70790,11 @@ GameObject:
   - component: {fileID: 1522095471}
   m_Layer: 0
   m_Name: CarInstance
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1522095471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74526,7 +74546,7 @@ GameObject:
   - component: {fileID: 1600470361}
   m_Layer: 0
   m_Name: CarInstance (4)
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76122,7 +76142,7 @@ GameObject:
   - component: {fileID: 1631447365}
   m_Layer: 0
   m_Name: CarToMove3
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85473,6 +85493,10 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 10d5972a5440d489f8a54e2d7498188b, type: 3}
+      propertyPath: m_TagString
+      value: AICar
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10d5972a5440d489f8a54e2d7498188b, type: 3}
   m_IsPrefabParent: 0
@@ -86294,7 +86318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8af1b08ec7cce4d89d12b1fd9562b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.02
 --- !u!54 &1834425238
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93522,7 +93546,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1968118746}
   m_LocalRotation: {x: -0, y: -0.8670675, z: -0, w: 0.4981906}
-  m_LocalPosition: {x: -339.85, y: -5.16, z: 2090.21}
+  m_LocalPosition: {x: 439.03, y: -3.4, z: 558.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 823173709}
@@ -93534,6 +93558,7 @@ Transform:
   - {fileID: 184307127}
   - {fileID: 441602647}
   - {fileID: 981448251}
+  - {fileID: 2060641631}
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -120.239006, z: 0}
@@ -98060,6 +98085,102 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2057730425}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2060641630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2060641631}
+  - component: {fileID: 2060641635}
+  - component: {fileID: 2060641634}
+  - component: {fileID: 2060641633}
+  - component: {fileID: 2060641632}
+  m_Layer: 9
+  m_Name: SlowDownAiCar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060641631
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060641630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04, y: 0.539, z: -1.36}
+  m_LocalScale: {x: 2.2151356, y: 1.0224462, z: 5.622353}
+  m_Children: []
+  m_Father: {fileID: 1968118751}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2060641632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060641630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f9158d5daafb741a92163b05c639fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &2060641633
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060641630}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &2060641634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060641630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2060641635
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060641630}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2061946921
 GameObject:
   m_ObjectHideFlags: 0
@@ -98773,11 +98894,11 @@ GameObject:
   - component: {fileID: 2080390314}
   m_Layer: 0
   m_Name: CarInstance (1)
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2080390313
 Transform:
   m_ObjectHideFlags: 0
@@ -100935,7 +101056,7 @@ GameObject:
   - component: {fileID: 2136569551}
   m_Layer: 0
   m_Name: CarToMove
-  m_TagString: Untagged
+  m_TagString: AICar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
