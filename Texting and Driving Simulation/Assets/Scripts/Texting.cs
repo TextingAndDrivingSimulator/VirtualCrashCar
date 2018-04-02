@@ -19,6 +19,14 @@ public class Texting : MonoBehaviour {
 
 	private SteamVR_TrackedController controller;
 
+	public bool enableVRControls = false;
+
+	private void VibrateController() {
+		if (enableVRControls) {
+			SteamVR_Controller.Input ((int)trackedObject.index).TriggerHapticPulse (500);
+		}
+	}
+
 	void Start () {
 		//trackedObject = GetComponent<SteamVR_TrackedObject>();    //toggle
 		//controller = GetComponent<SteamVR_TrackedController> ();   //toggle
