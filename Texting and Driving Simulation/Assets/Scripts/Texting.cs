@@ -23,8 +23,14 @@ public class Texting : MonoBehaviour {
 
 	private void VibrateController() {
 		if (enableVRControls) {
-			SteamVR_Controller.Input ((int)trackedObject.index).TriggerHapticPulse (500);
-		}
+            // Vibrate controller L
+            SteamVR_Controller.Input(
+                SteamVR_Controller.GetDeviceIndex(
+                    SteamVR_Controller.DeviceRelation.Leftmost)).TriggerHapticPulse(500);
+            SteamVR_Controller.Input(
+              SteamVR_Controller.GetDeviceIndex(
+                  SteamVR_Controller.DeviceRelation.Rightmost)).TriggerHapticPulse(500);
+        }
 	}
 
 	void Start () {
@@ -54,12 +60,15 @@ public class Texting : MonoBehaviour {
 		}*/
 
 	}
-
+    public bool vibrate;
 	void Update () {
 		//device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
 
         //USE a,b,c,d on keyboard for testing purposes
-        
+        if (vibrate)
+        {
+            VibrateController();
+        }
 
 		//Josh's String Testing Below
 		if (Input.GetMouseButtonDown (0)) {
