@@ -14,7 +14,6 @@ public class StopCarOnEnter : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter(Collider other) {
-		Debug.Log ("found car!");
 		if (other.gameObject.CompareTag ("AICar")) {
 			MoveObjectAlongWaypoints mover = other.gameObject.GetComponentInParent<MoveObjectAlongWaypoints> ();
 			mover.paused = true;
@@ -22,7 +21,6 @@ public class StopCarOnEnter : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other) {
-		Debug.Log ("lost car!");
 		if (other.gameObject.CompareTag ("AICar")) {
 			MoveObjectAlongWaypoints mover = other.gameObject.GetComponentInParent<MoveObjectAlongWaypoints> ();
 			mover.paused = false;

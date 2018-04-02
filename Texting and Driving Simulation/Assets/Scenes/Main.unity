@@ -23669,7 +23669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &441602647
 Transform:
   m_ObjectHideFlags: 0
@@ -36206,6 +36206,7 @@ GameObject:
   - component: {fileID: 732834295}
   - component: {fileID: 732834294}
   - component: {fileID: 732834299}
+  - component: {fileID: 732834300}
   m_Layer: 9
   m_Name: TextMessages
   m_TagString: Untagged
@@ -36344,9 +36345,89 @@ MonoBehaviour:
   textBank: {fileID: 1900517135}
   enableVRControls: 0
   currentText: 0
-  myClip: {fileID: 0}
-  mySource: {fileID: 0}
+  myClip: {fileID: 8300000, guid: 48d4a4e6753c85f4ea2a21e4ed72a477, type: 3}
+  mySource: {fileID: 732834300}
   vibrate: 0
+--- !u!82 &732834300
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 732834292}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &737782555
 GameObject:
   m_ObjectHideFlags: 0
@@ -82943,6 +83024,7 @@ GameObject:
   - component: {fileID: 1748314223}
   - component: {fileID: 1748314222}
   - component: {fileID: 1748314221}
+  - component: {fileID: 1748314225}
   - component: {fileID: 1748314220}
   m_Layer: 9
   m_Name: VRCamera
@@ -82967,8 +83049,7 @@ Transform:
 --- !u!114 &1748314220
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000012530188460, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1748314218}
   m_Enabled: 1
@@ -83044,6 +83125,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &1748314225
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1748314218}
+  m_Enabled: 1
 --- !u!1 &1749189747
 GameObject:
   m_ObjectHideFlags: 0
