@@ -34,7 +34,7 @@ public class Texting : MonoBehaviour {
 		}
 
 		//Reading out x,y values to find button selected
-		
+		/*
 		if (device.GetAxis ().x > 0 && device.GetAxis ().y > 0) {
 			//b selected
 		} else if (device.GetAxis ().x > 0 && device.GetAxis ().y < 0) {
@@ -43,19 +43,19 @@ public class Texting : MonoBehaviour {
 			//a selected
 		} else if (device.GetAxis ().x < 0 && device.GetAxis ().y < 0) {
 			//d selected
-		}
+		}*/
 
 	}
 
 	void Update () {
 		//device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
-        
+
         //USE a,b,c,d on keyboard for testing purposes
         
 
 		//Josh's String Testing Below
 		if (Input.GetMouseButtonDown (0)) {
-			textMessages.text = textBank.s1;
+			textMessages.text = textBank.s14;
 		}
 	}
 }

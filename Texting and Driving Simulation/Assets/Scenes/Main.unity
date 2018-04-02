@@ -92528,6 +92528,7 @@ GameObject:
   - component: {fileID: 1956349482}
   - component: {fileID: 1956349481}
   - component: {fileID: 1956349480}
+  - component: {fileID: 1956349485}
   m_Layer: 9
   m_Name: TextButtons
   m_TagString: Untagged
@@ -92572,7 +92573,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 021c5c0d27f3d46598af157c3cef6013, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec2afd751358c4dcba6dcf3f6dc90190, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -92643,6 +92644,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1956349485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1956349478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cd59ed6d727404cb94e5a448fe241b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choiceA: {fileID: 21300000, guid: 5a21c59c83e6844678f8acdc1ac04e88, type: 3}
+  choiceB: {fileID: 21300000, guid: eec19e48b3df84f6594bdeb5fd3a584f, type: 3}
+  choiceC: {fileID: 21300000, guid: 162e5ca49d3f148c18b0b365a8eea2b5, type: 3}
+  choiceD: {fileID: 21300000, guid: b51b51c5b6f1046b585c46d6c0e3a067, type: 3}
+  noneChosen: {fileID: 21300000, guid: ec2afd751358c4dcba6dcf3f6dc90190, type: 3}
 --- !u!1 &1958399813
 GameObject:
   m_ObjectHideFlags: 0
@@ -98322,6 +98339,7 @@ GameObject:
   - component: {fileID: 2067916411}
   - component: {fileID: 2067916410}
   - component: {fileID: 2067916409}
+  - component: {fileID: 2067916414}
   m_Layer: 9
   m_Name: TextButtons
   m_TagString: Untagged
@@ -98437,6 +98455,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &2067916414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067916407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cd59ed6d727404cb94e5a448fe241b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choiceA: {fileID: 21300000, guid: 5a21c59c83e6844678f8acdc1ac04e88, type: 3}
+  choiceB: {fileID: 21300000, guid: eec19e48b3df84f6594bdeb5fd3a584f, type: 3}
+  choiceC: {fileID: 21300000, guid: 162e5ca49d3f148c18b0b365a8eea2b5, type: 3}
+  choiceD: {fileID: 21300000, guid: b51b51c5b6f1046b585c46d6c0e3a067, type: 3}
+  noneChosen: {fileID: 21300000, guid: ec2afd751358c4dcba6dcf3f6dc90190, type: 3}
 --- !u!1 &2070820194
 GameObject:
   m_ObjectHideFlags: 0
