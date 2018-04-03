@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1317519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -401,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &5469371
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -569,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &6950889
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -737,6 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &14210972
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -905,6 +909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &15088820
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -989,6 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &15571602
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1100,6 +1106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &15661308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1197,6 +1204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &16125098
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1365,6 +1373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &22942549
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1462,6 +1471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &23665389
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1559,6 +1569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &26950322
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1656,6 +1667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &27665422
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1824,6 +1836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &29173202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1921,6 +1934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &30481952
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2118,6 +2132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &43800148
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2171,6 +2186,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 43800145}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &50664069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 50664070}
+  - component: {fileID: 50664072}
+  - component: {fileID: 50664071}
+  m_Layer: 9
+  m_Name: PedHit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &50664070
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50664069}
+  m_LocalRotation: {x: -0.010499991, y: 0.0049466477, z: -0.024001893, w: 0.9996445}
+  m_LocalPosition: {x: 0, y: 0, z: -154.00069}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1868631073}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -1.189, y: 0.596, z: -2.7570002}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -109.99786, y: 23.999985}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &50664071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50664069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Hit Pedestrian!
+
+    +20 Demerits'
+--- !u!222 &50664072
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50664069}
 --- !u!1 &57572522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,6 +2334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &59921383
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2411,6 +2503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &61681352
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2508,6 +2601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &63090863
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2605,6 +2699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &65984956
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2773,6 +2868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &69425577
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2870,6 +2966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &69683911
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2967,6 +3064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &70800266
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3064,6 +3162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &75945289
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3232,6 +3331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &77474313
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3424,6 +3524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &84358845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3521,6 +3622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &91085554
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3689,6 +3791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &96088521
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4017,6 +4120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &99479567
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4114,6 +4218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &103498897
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4211,6 +4316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &106691792
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4308,6 +4414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &108516398
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4405,6 +4512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &110858728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4502,6 +4610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &113588541
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4599,6 +4708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &114377833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4696,6 +4806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &117236553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4793,6 +4904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &119026902
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4890,6 +5002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &120712337
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4992,6 +5105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &126239511
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5089,6 +5203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &126361324
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5268,6 +5383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &129880734
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5365,6 +5481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &130340565
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5462,6 +5579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &131986774
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8934,6 +9052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &135981745
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9031,6 +9150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &136606509
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9128,6 +9248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &136806252
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9296,6 +9417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &140035870
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9393,6 +9515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &141577997
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9490,6 +9613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &142404910
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9658,6 +9782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &153466917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9912,6 +10037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &157075296
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10009,6 +10135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &157609641
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10106,6 +10233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &161875714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10203,6 +10331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &164502274
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10401,6 +10530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &170387783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10498,6 +10628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &170644364
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10677,6 +10808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &173768161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10845,6 +10977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &174340843
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10942,6 +11075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &176687720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11039,6 +11173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &176822808
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11207,6 +11342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &183361868
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11275,7 +11411,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &184307127
 Transform:
   m_ObjectHideFlags: 0
@@ -11364,6 +11500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &186112834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11461,6 +11598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &186816972
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11558,6 +11696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &187609830
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11655,6 +11794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &188297684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11752,6 +11892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &188596199
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12030,6 +12171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &193200686
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12127,6 +12269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &193863355
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12224,6 +12367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &195081536
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12321,6 +12465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &195342104
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12489,6 +12634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &197137216
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12657,6 +12803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &199962601
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12754,6 +12901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &203451838
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13131,6 +13279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &205663494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13412,6 +13561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &210087257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13595,6 +13745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CarHit: {fileID: 1208351625}
 --- !u!65 &215575288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13651,6 +13802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &219661213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14012,6 +14164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &225623311
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14180,6 +14333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &227409698
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14277,6 +14431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &227870265
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14445,6 +14600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &235701058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14542,6 +14698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &237364873
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14639,6 +14796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &238842670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14807,6 +14965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &240239217
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14904,6 +15063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &241739991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15100,6 +15260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PedHit: {fileID: 50664071}
 --- !u!114 &245042691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15201,6 +15362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CarHit: {fileID: 1208351625}
 --- !u!65 &251153226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15257,6 +15419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &255408714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15354,6 +15517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &256047751
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15451,6 +15615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &256857441
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15548,6 +15713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &258530659
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15645,6 +15811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &265126784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15742,6 +15909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &266064208
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15998,6 +16166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &279467060
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16095,6 +16264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &281182176
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16192,6 +16362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &282857702
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16360,6 +16531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &287437583
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16457,6 +16629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &288281415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16630,6 +16803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &290239047
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16798,6 +16972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &299656487
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16966,6 +17141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &303859309
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17134,6 +17310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &308159019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17231,6 +17408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &313931923
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17399,6 +17577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &317383956
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17567,6 +17746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &321019279
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17745,6 +17925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CarHit: {fileID: 1208351625}
 --- !u!114 &324322136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17824,6 +18005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &326438097
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17921,6 +18103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &327693353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18160,6 +18343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &331486851
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18257,6 +18441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &331975807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18354,6 +18539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &333964498
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18522,6 +18708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &335973131
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18619,6 +18806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &336395049
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18787,6 +18975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &338414801
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18884,6 +19073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &339155594
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19194,6 +19384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &342481287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19291,6 +19482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &344479269
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19459,6 +19651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &345016687
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19556,6 +19749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &347558210
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19653,6 +19847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &347818605
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19858,6 +20053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PedHit: {fileID: 50664071}
 --- !u!114 &349787773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19946,6 +20142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &350425811
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20114,6 +20311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &359079444
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20211,6 +20409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &359190346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20308,6 +20507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &360723591
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20405,6 +20605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &360900863
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20502,6 +20703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &363529358
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20599,6 +20801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &364786459
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20696,6 +20899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &369949184
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20808,6 +21012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PedHit: {fileID: 50664071}
 --- !u!1 &374182565
 GameObject:
   m_ObjectHideFlags: 0
@@ -20914,6 +21119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &378889406
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21011,6 +21217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &381843615
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21250,6 +21457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &387518841
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21347,6 +21555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &395732747
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21444,6 +21653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &397977590
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21612,6 +21822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &402393013
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21726,6 +21937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &404187962
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21823,6 +22035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &406440012
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21920,6 +22133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &407139288
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22017,6 +22231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &409495748
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22114,6 +22329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &410471718
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22353,6 +22569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &416672803
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22450,6 +22667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &423151923
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22547,6 +22765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &423343379
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22644,6 +22863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &423549243
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22759,6 +22979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &425905493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22856,6 +23077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &426152596
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22953,6 +23175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &428472025
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23121,6 +23344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &430352642
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23218,6 +23442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &430609168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23405,6 +23630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &438377381
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23502,6 +23728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &438862273
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23599,6 +23826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &440320386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23669,7 +23897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &441602647
 Transform:
   m_ObjectHideFlags: 0
@@ -23777,6 +24005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &443786191
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23874,6 +24103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &444518620
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23971,6 +24201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &445403004
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24139,6 +24370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &447265822
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24236,6 +24468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &454660650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24333,6 +24566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &457870868
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24447,6 +24681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &466701526
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24686,6 +24921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &472311749
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24783,6 +25019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &472329729
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24880,6 +25117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &474886735
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24977,6 +25215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &475994170
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25074,6 +25313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &476565779
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25171,6 +25411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &476981610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25268,6 +25509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &481108715
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25366,6 +25608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &489322566
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25463,6 +25706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &490064043
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25633,6 +25877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &492204617
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25730,6 +25975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &499568165
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25827,6 +26073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &501249683
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25924,6 +26171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &501662240
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26021,6 +26269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &509570921
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26898,6 +27147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &513408792
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26995,6 +27245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &519227310
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27092,6 +27343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &521822436
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27341,6 +27593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &525233138
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27438,6 +27691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &526397836
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27606,6 +27860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &528880519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27774,6 +28029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &532268314
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27871,6 +28127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &534468122
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27968,6 +28225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &535053355
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28136,6 +28394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &538405597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28233,6 +28492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &539980567
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28330,6 +28590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &540239719
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28498,6 +28759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &542176479
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28666,6 +28928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &543700221
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28763,6 +29026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &545152906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28860,6 +29124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &549494286
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28957,6 +29222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &553763186
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29236,6 +29502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &568954827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29903,6 +30170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PedHit: {fileID: 50664071}
 --- !u!143 &578163211
 CharacterController:
   m_ObjectHideFlags: 0
@@ -30048,6 +30316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &583192834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30145,6 +30414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &585003920
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30242,6 +30512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &585774826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30339,6 +30610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &586492962
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30678,6 +30950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &603543545
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30775,6 +31048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &605922409
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30872,6 +31146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &605930390
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31111,6 +31386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &613262479
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31208,6 +31484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &616622780
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31472,6 +31749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &625232705
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31569,6 +31847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &626059196
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31666,6 +31945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &626128355
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31763,6 +32043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &627125061
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31860,6 +32141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &627153889
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32028,6 +32310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &636288464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32196,6 +32479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &637958617
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32435,6 +32719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &641268968
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32595,6 +32880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &646258800
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32780,6 +33066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &648269533
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32877,6 +33164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &650326879
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32974,6 +33262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &651255353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33071,6 +33360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &652625842
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33168,6 +33458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &657624612
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33265,6 +33556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &659940499
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33362,6 +33654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &660021779
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33601,6 +33894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &667706592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33744,6 +34038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &670962506
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34031,6 +34326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &679648476
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34199,6 +34495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &685054929
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34296,6 +34593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &687415934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34393,6 +34691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &687989173
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34634,6 +34933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &700993028
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34944,6 +35244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &707006378
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35041,6 +35342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &707855191
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35138,6 +35440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &709308339
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35235,6 +35538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &712817321
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35332,6 +35636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &715335789
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35429,6 +35734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &716409735
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35526,6 +35832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &716568658
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35623,6 +35930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &719326379
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36685,6 +36993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &740742286
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36853,6 +37162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &741014176
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36950,6 +37260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &741506963
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37047,6 +37358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &742312277
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37233,6 +37545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &750593833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37330,6 +37643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &750729782
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37427,6 +37741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &752660824
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37829,6 +38144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &761303797
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37961,6 +38277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &765404915
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38058,6 +38375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &766422894
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38155,6 +38473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &767532484
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38281,6 +38600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &769045285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38494,6 +38814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &785105030
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38591,6 +38912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &787948047
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38688,6 +39010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &790281261
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38856,6 +39179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &795324193
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39024,6 +39348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &801046825
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39121,6 +39446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &801820631
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39218,6 +39544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &803533224
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39315,6 +39642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &809036877
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39478,6 +39806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &810028618
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39788,6 +40117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &814641361
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40031,6 +40361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &824800216
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40245,6 +40576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PedHit: {fileID: 50664071}
 --- !u!114 &827029915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40404,6 +40736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &830921878
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40501,6 +40834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &831144082
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40759,6 +41093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &835213924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40856,6 +41191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &840838329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41090,6 +41426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &846882995
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41504,6 +41841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &857745763
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41715,6 +42053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &863755016
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41812,6 +42151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &865363307
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41941,6 +42281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &874609504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42255,6 +42596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &883806056
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42352,6 +42694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &889000070
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42467,6 +42810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &896875341
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42564,6 +42908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &900364158
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42661,6 +43006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &900740548
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42758,6 +43104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &901999592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42855,6 +43202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &902544587
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42952,6 +43300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &902730478
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43049,6 +43398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &903683934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43217,6 +43567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &904696270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43314,6 +43665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &906385660
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43411,6 +43763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &909954685
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43744,6 +44097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &911198926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43841,6 +44195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &913515890
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43938,6 +44293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &914766259
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44151,6 +44507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &928175560
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44319,6 +44676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &939260992
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44416,6 +44774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &941249377
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44513,6 +44872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &943845049
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44752,6 +45112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &949156236
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44849,6 +45210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &951422651
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45017,6 +45379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &955466521
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45217,6 +45580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &958277902
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45314,6 +45678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &959077497
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45411,6 +45776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &968020375
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45508,6 +45874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &968811991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45605,6 +45972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &968998617
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45702,6 +46070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &969081313
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45903,6 +46272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CarHit: {fileID: 1208351625}
 --- !u!114 &979425707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46072,6 +46442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &990145712
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46169,6 +46540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &995253082
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46349,6 +46721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1006658712
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46446,6 +46819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1007963548
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46543,6 +46917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1009261040
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46640,6 +47015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1010040385
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46737,6 +47113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1010627753
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46834,6 +47211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1011249712
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46931,6 +47309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1013029325
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47028,6 +47407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1013037054
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47125,6 +47505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1013927586
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47222,6 +47603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1016602455
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47319,6 +47701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1016636203
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47416,6 +47799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1016781512
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47513,6 +47897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1018977034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47610,6 +47995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1020451802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47920,6 +48306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1025867043
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48088,6 +48475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1030064134
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48185,6 +48573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1030796014
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48282,6 +48671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1033402448
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48536,6 +48926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1048769089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48633,6 +49024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1049484287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48730,6 +49122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1050513149
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48827,6 +49220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1050818148
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48924,6 +49318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1053062665
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49021,6 +49416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1053489396
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49118,6 +49514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1055897198
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49215,6 +49612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1057769532
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49312,6 +49710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1058557570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49510,6 +49909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1060413541
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49848,6 +50248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1070974267
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50089,6 +50490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1079853272
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50186,6 +50588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1089385848
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50722,6 +51125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1096680382
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50905,6 +51309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1108364828
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51073,6 +51478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1111592654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51170,6 +51576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1112016973
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51326,6 +51733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1122438730
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51586,6 +51994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CarHit: {fileID: 1208351625}
 --- !u!65 &1122634228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51642,6 +52051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1122719545
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51739,6 +52149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1123572120
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51907,6 +52318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1124808902
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52004,6 +52416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1124936459
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52172,6 +52585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1133287608
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52574,6 +52988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1139357136
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52671,6 +53086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1140830168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52924,6 +53340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1145669496
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53021,6 +53438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1147218824
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53118,6 +53536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1153658058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53215,6 +53634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1159821468
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53539,6 +53959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1167931150
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53854,6 +54275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1175404229
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54022,6 +54444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1176864493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54119,6 +54542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1181232623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54216,6 +54640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1183795584
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54313,6 +54738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1184555297
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54526,6 +54952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1187425532
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54623,6 +55050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1188473164
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54720,6 +55148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1191458958
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54888,6 +55317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1194298544
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54985,6 +55415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1195139977
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55082,6 +55513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1195202281
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55179,6 +55611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1199550168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55276,6 +55709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1200255957
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55373,6 +55807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1203472554
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55470,6 +55905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1205330661
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55567,6 +56003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1205407089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55620,6 +56057,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1205407086}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1208351623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1208351624}
+  - component: {fileID: 1208351626}
+  - component: {fileID: 1208351625}
+  m_Layer: 9
+  m_Name: CarHit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1208351624
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208351623}
+  m_LocalRotation: {x: -0.017669776, y: -0.009815193, z: 0.0796988, w: 0.99661404}
+  m_LocalPosition: {x: 0, y: 0, z: -148}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1868631073}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -1.9290001, y: -1.2830001, z: 9.166}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -262, y: 21}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1208351625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208351623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Hit Car!
+
+    +10 Demerits'
+--- !u!222 &1208351626
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208351623}
 --- !u!1 &1215048874
 GameObject:
   m_ObjectHideFlags: 0
@@ -55664,6 +56177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1215048877
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55761,6 +56275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1215790347
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55858,6 +56373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1218115720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55955,6 +56471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1218182262
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56123,6 +56640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1222240831
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56220,6 +56738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1222438811
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56317,6 +56836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1223336465
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56414,6 +56934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1224417225
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56667,6 +57188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1225962759
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56764,6 +57286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1226758774
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57074,6 +57597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1242975858
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57259,6 +57783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1244148973
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57427,6 +57952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1245200036
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57524,6 +58050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1247393667
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57621,6 +58148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1248154831
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57789,6 +58317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1251983214
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -57886,6 +58415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1252701350
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58120,6 +58650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1256394499
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58217,6 +58748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1259989539
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58385,6 +58917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1263097049
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58482,6 +59015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1263998770
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58579,6 +59113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1267548814
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58676,6 +59211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1269905783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58773,6 +59309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1270370216
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58870,6 +59407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1270708630
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58967,6 +59505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1274652850
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59064,6 +59603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1275770292
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59161,6 +59701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1278928305
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59258,6 +59799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1283248185
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59355,6 +59897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1284118931
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59596,6 +60139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1287973541
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59693,6 +60237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1288445441
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59790,6 +60335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1288792757
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -59887,6 +60433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1291547979
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60132,6 +60679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1294075041
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60229,6 +60777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1301138388
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60326,6 +60875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1303670241
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60423,6 +60973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1303921591
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60520,6 +61071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1306140037
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60688,6 +61240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1311749138
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60785,6 +61338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1317111878
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60909,6 +61463,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1317976243}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1318688182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1318688183}
+  - component: {fileID: 1318688185}
+  - component: {fileID: 1318688184}
+  m_Layer: 9
+  m_Name: OffRoad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1318688183
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1318688182}
+  m_LocalRotation: {x: 0.012131661, y: -0.010489403, z: -0.00095588964, w: 0.99987096}
+  m_LocalPosition: {x: 0, y: 0, z: -150.00003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1868631073}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 1.389, y: -1.2040001, z: -0.124000005}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -170.0014, y: 84.99997}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1318688184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1318688182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Off Road!
+
+    +5 Demerits'
+--- !u!222 &1318688185
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1318688182}
 --- !u!1 &1320158903
 GameObject:
   m_ObjectHideFlags: 0
@@ -60953,6 +61583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1320158906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61050,6 +61681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1321734555
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61245,6 +61877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1325848335
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61342,6 +61975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1330223112
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61439,6 +62073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1330268694
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61536,6 +62171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1337437992
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61846,6 +62482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1339440712
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61943,6 +62580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1340897415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62040,6 +62678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1341621767
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62318,6 +62957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1349172264
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62486,6 +63126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1353292802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62583,6 +63224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1353649106
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62829,6 +63471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1358415412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62926,6 +63569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1361180271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63023,6 +63667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1365316077
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63120,6 +63765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1370160323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63217,6 +63863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1371427042
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63314,6 +63961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1372315401
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63411,6 +64059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1372628328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63508,6 +64157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1374076775
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63763,6 +64413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1389743924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63860,6 +64511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1390327250
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63957,6 +64609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1390770060
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64054,6 +64707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1392080296
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64222,6 +64876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1396095970
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64319,6 +64974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1398267520
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64416,6 +65072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1403226638
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64584,6 +65241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1405485720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64681,6 +65339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1406271589
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64778,6 +65437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1408865654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64875,6 +65535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1408976257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64972,6 +65633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1409740488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65069,6 +65731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1409742086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65166,6 +65829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1410443187
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65263,6 +65927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1412171583
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65360,6 +66025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1414228941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65457,6 +66123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1419765157
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65554,6 +66221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1420051053
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65651,6 +66319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1422396058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65748,6 +66417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1423562573
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65845,6 +66515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1423767386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65942,6 +66613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1424213156
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66181,6 +66853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1426431592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66278,6 +66951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1426580418
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66362,6 +67036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1426723596
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66502,6 +67177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1434276025
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66670,6 +67346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1434959740
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66767,6 +67444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1436726299
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66935,6 +67613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1438871143
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67032,6 +67711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1441676035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67129,6 +67809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1443074845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67226,6 +67907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1445355640
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67323,6 +68005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1446208147
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67420,6 +68103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1448368662
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67517,6 +68201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1449346139
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67614,6 +68299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1451395928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67815,6 +68501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1453924141
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67912,6 +68599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1454238162
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68009,6 +68697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1458601970
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68106,6 +68795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1458814853
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68274,6 +68964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1459859418
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68371,6 +69062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1461666253
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68468,6 +69160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1462600243
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68721,6 +69414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1469812794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68818,6 +69512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1469834529
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68915,6 +69610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1470119105
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69012,6 +69708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1472173477
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69365,6 +70062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1484829444
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69604,6 +70302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1488744739
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69848,6 +70547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1493925167
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70016,6 +70716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1497297403
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70452,6 +71153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1501281287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70549,6 +71251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1502525550
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70646,6 +71349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1506771696
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70744,6 +71448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1508574974
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70912,6 +71617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1512251362
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -71038,6 +71744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1512917285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -71135,6 +71842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1513802098
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -71608,6 +72316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1522740111
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -71973,6 +72682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PedHit: {fileID: 50664071}
 --- !u!1 &1531477910
 GameObject:
   m_ObjectHideFlags: 0
@@ -72017,6 +72727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1531477913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72114,6 +72825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1532506934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72211,6 +72923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1535361625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72450,6 +73163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1542893889
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72547,6 +73261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1546709341
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72715,6 +73430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1546840880
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72812,6 +73528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1550226285
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -72980,6 +73697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1555107218
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73077,6 +73795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1556899134
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73245,6 +73964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1559020394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73342,6 +74062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1559581198
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73439,6 +74160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1559874854
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73607,6 +74329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1560352942
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73704,6 +74427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1562694565
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73801,6 +74525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1563310416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73898,6 +74623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1566232238
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -73995,6 +74721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1567256071
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74165,6 +74892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1568671961
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74249,6 +74977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1568782157
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74360,6 +75089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1569228507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74528,6 +75258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1582619318
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74625,6 +75356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1586756378
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74722,6 +75454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1587227871
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74819,6 +75552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1588871863
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74962,6 +75696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1598568821
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75364,6 +76099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1601264864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75532,6 +76268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1601518771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75629,6 +76366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1603514439
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75797,6 +76535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1606524180
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75894,6 +76633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1607143625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75991,6 +76731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1607812931
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -76230,6 +76971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1617406065
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -76488,6 +77230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1622815397
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -76685,6 +77428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1639195006
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -76782,6 +77526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1639332186
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -76950,6 +77695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1644622730
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77047,6 +77793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1646810329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77215,6 +77962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1650420393
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77383,6 +78131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1653009968
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77551,6 +78300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1660512400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77648,6 +78398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1662620662
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77745,6 +78496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1663611610
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -77946,6 +78698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1667259837
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78043,6 +78796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1671633173
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78211,6 +78965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1678713983
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78308,6 +79063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1679194392
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78476,6 +79232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1680713657
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78644,6 +79401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1686242828
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78812,6 +79570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1688554248
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78980,6 +79739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1690099769
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -79077,6 +79837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1690726846
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -79174,6 +79935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1691439831
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -79271,6 +80033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1692064806
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -79368,6 +80131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1692303166
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -79465,6 +80229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1692541018
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -79562,6 +80327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1693637069
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -79730,6 +80496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1694915999
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -80063,6 +80830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1704170626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -80160,6 +80928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1705123304
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -80399,6 +81168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1710274104
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -80638,6 +81408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1712262034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -80735,6 +81506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1712496211
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -80974,6 +81746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1715304242
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81071,6 +81844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1715579926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81168,6 +81942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1720365679
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81265,6 +82040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1721404519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81362,6 +82138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1722151234
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81592,6 +82369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1725423320
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81676,6 +82454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1725725272
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81858,6 +82637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1727472928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81955,6 +82735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1727738905
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82123,6 +82904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1734564734
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82220,6 +83002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1734720839
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82317,6 +83100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1737286860
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82460,6 +83244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1738371552
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82557,6 +83342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1742148498
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82654,6 +83440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1742691447
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82862,6 +83649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1744628810
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82959,6 +83747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1745996921
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83176,6 +83965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1749189750
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83486,6 +84276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1751856135
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83583,6 +84374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1753768792
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83751,6 +84543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1759682463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83848,6 +84641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1763697208
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83999,6 +84793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1765158699
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84096,6 +84891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1766961664
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84387,6 +85183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1778701268
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84641,6 +85438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1785516749
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84738,6 +85536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1789092912
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84835,6 +85634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1792497765
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84932,6 +85732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1792655469
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85100,6 +85901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1795871222
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85197,6 +85999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1800020771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85365,6 +86168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1807627761
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85462,6 +86266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1808292985
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85559,6 +86364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1808338641
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85656,6 +86462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1809587339
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85840,6 +86647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1812737987
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86173,6 +86981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1823686993
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86270,6 +87079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1823992722
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86367,6 +87177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1824404826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86631,6 +87442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1825457086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86799,6 +87611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1832862696
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -86928,6 +87741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CarHit: {fileID: 1208351625}
 --- !u!65 &1834425242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86984,6 +87798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1837343007
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -87154,6 +87969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1841051512
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -87251,6 +88067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1844557304
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -87348,6 +88165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1845241175
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -87445,6 +88263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1845798299
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -87755,6 +88574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1849481146
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -87923,6 +88743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1850101266
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88020,6 +88841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1853178140
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88296,6 +89118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1866630802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88380,6 +89203,9 @@ RectTransform:
   m_LocalScale: {x: 0.006968644, y: 0.006968641, z: 0.006968644}
   m_Children:
   - {fileID: 208402859}
+  - {fileID: 1318688183}
+  - {fileID: 1208351624}
+  - {fileID: 50664070}
   m_Father: {fileID: 1702990069}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -88507,6 +89333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1870414164
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88675,6 +89502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1873891055
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88772,6 +89600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1874101485
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88869,6 +89698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1879677741
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88966,6 +89796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1882218088
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89134,6 +89965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1884900687
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89231,6 +90063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1886567930
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89641,6 +90474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1891311328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89738,6 +90572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1892807099
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89835,6 +90670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1896773732
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90003,6 +90839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1900139736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90154,6 +90991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1900664133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90409,6 +91247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1906402442
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90577,6 +91416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1912585480
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90674,6 +91514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1912648216
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90771,6 +91612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1917223921
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -90939,6 +91781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1917540023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91212,6 +92055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1924479700
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91380,6 +92224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1928145189
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91477,6 +92322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1928663985
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91574,6 +92420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1930953179
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91671,6 +92518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1932205891
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91839,6 +92687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1937157712
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91936,6 +92785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1938152133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92033,6 +92883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1938343039
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92130,6 +92981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1939733554
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92227,6 +93079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1940904889
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92324,6 +93177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1942279471
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92421,6 +93275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1942856609
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92518,6 +93373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1943535146
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92681,6 +93537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1950355824
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92778,6 +93635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1953951213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92875,6 +93733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1954431398
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92972,6 +93831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1954927612
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93069,6 +93929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1955683749
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93382,6 +94243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1960784480
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93479,6 +94341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1962309771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93576,6 +94439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1963825420
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93673,6 +94537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1965131361
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93857,6 +94722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1966110480
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93954,6 +94820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1966897380
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -94274,6 +95141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1969379904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -94371,6 +95239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1970166363
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -94468,6 +95337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1970383248
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -94915,6 +95785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1976777470
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -95303,6 +96174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1988194559
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -95471,6 +96343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1993023919
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -95639,6 +96512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1994653397
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -95736,6 +96610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1997745739
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -95909,6 +96784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &1999883055
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96006,6 +96882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2001809006
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96103,6 +96980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2003544112
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96200,6 +97078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2006094374
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96297,6 +97176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2007616235
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96394,6 +97274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2008836916
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96562,6 +97443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2012697658
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96659,6 +97541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2012819031
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96756,6 +97639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2015348789
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96853,6 +97737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2015791942
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96950,6 +97835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2019281718
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97047,6 +97933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2021208291
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97144,6 +98031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2021532720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97241,6 +98129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2022146758
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97338,6 +98227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2022317406
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97435,6 +98325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2025640786
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97608,6 +98499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2026996021
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97705,6 +98597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2028614365
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97802,6 +98695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2032599591
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98013,6 +98907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2043510949
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98181,6 +99076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2050671138
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98278,6 +99174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2050760033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98375,6 +99272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2051282793
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98585,6 +99483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2053059202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98682,6 +99581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2053734082
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98807,6 +99707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2057730428
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -98987,6 +99888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2061946923
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -99098,6 +100000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2064083696
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -99411,6 +100314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2070820197
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -99508,6 +100412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2073545723
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -99605,6 +100510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2078279011
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100007,6 +100913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2081152027
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100104,6 +101011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2083225277
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100233,6 +101141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2084148416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100493,6 +101402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2094387119
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100590,6 +101500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2102975531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100687,6 +101598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2106987904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100784,6 +101696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2111625675
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100881,6 +101794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2115466853
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -100978,6 +101892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2117473523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -101212,6 +102127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2123262150
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -101309,6 +102225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2124010412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -101406,6 +102323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2124996374
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -101503,6 +102421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2125765578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -101600,6 +102519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2128076916
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -101697,6 +102617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2130671515
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -101965,6 +102886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2142326910
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -102062,6 +102984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
 --- !u!23 &2144265689
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -102284,3 +103207,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseDemeritScore: 5
+  OffRoad: {fileID: 1318688184}
