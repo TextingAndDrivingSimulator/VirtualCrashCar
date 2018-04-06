@@ -5,14 +5,59 @@ using UnityEngine.UI;
 
 public class EndCredits : MonoBehaviour {
 	public Text finalScoreText;
-
 	public GameObject finalScore;
 	public GameObject demeritCountText;
-	public GameObject femalePic1;
-	public GameObject femaleText1;
+    private static List<GameObject> victims = new List<GameObject>(); //List of Objects hit.
+    private static List<GameObject> noVic = new List<GameObject>();  //List of all Victims (it says noVic because it means no victim has been hit)
+	public static GameObject femalePic1;
+    public static GameObject carPic1;
+    public static GameObject carPic2;
+    public static GameObject carPic3;
 
+
+    void printStory()
+    {
+        if (victims.Count == 0) //Pick from noVic if nothing has been hit
+        {
+            var story = Random.Range(0, noVic.Count);
+            GameObject print = noVic[story];
+            print.SetActive(true);
+        }
+        else {
+            var story = Random.Range(0, victims.Count);
+            GameObject print = victims[story];
+            print.SetActive(true);
+        }
+
+    }
+
+    public static void addToVictims(int h)
+    {
+        GameObject v = null; 
+        switch (h) //The scripts of the victims will set h, corresponding to which type of victim was hit.
+        {
+            case 1:
+                v = femalePic1;
+                break;
+            case 2:
+                v = carPic1;
+                break;
+            case 3:
+                v = carPic2;
+                break;
+            case 4:
+                v = carPic3;
+                break;
+        }
+        int i = victims.Count;
+        victims[i] = v;
+    }
 
 	void Start () {
+        noVic.Add(femalePic1); //Will add more as more stories are added (same thing with the cases in addToVictims)
+        noVic.Add(carPic1);
+        noVic.Add(carPic2);
+        noVic.Add(carPic3);
 		StartCoroutine(Credits());
 	}
 
@@ -28,8 +73,8 @@ public class EndCredits : MonoBehaviour {
 		//use if-statements for choosing specific slides
 		finalScore.SetActive (false);
 		demeritCountText.SetActive (false);
-		femalePic1.SetActive (true);
-		femaleText1.SetActive (true);
+        printStory();
+		
 	}
 		
 }

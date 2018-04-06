@@ -21001,7 +21001,7 @@ MonoBehaviour:
   distance1: 0
   distance2: 0
   stopPoint: 223
---- !u!114 &374108399
+--- !u!114 &374108397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -21009,10 +21009,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 374108393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28c1a9fd55caf264c92456c0b16c0548, type: 3}
+  m_Script: {fileID: 11500000, guid: 918186b882ed87143b9ea9c984dbd449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PedHit: {fileID: 50664071}
+  PedHit: {fileID: 0}
 --- !u!1 &374182565
 GameObject:
   m_ObjectHideFlags: 0
