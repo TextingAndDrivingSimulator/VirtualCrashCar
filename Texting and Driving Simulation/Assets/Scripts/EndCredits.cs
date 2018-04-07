@@ -19,14 +19,12 @@ public class EndCredits : MonoBehaviour {
     {
         if (victims.Count == 0) //Pick from noVic if nothing has been hit
         {
-            var story = Random.Range(0, noVic.Count);
-            GameObject print = noVic[story];
-            print.SetActive(true);
+            int story = Random.Range(0, noVic.Count);
+            noVic[story].SetActive(true);
         }
         else {
             var story = Random.Range(0, victims.Count);
-            GameObject print = victims[story];
-            print.SetActive(true);
+            victims[story].SetActive(true);
         }
 
     }
