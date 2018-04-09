@@ -24,6 +24,9 @@ public class Texting : MonoBehaviour {
 
     public AudioClip myClip;
     public AudioSource mySource;
+    private bool beingHandled = false;
+    private bool soundPlayed = false;
+    private bool pressed = false;
 
     private void VibrateController() {
 		if (enableVRControls) {
@@ -49,7 +52,7 @@ public class Texting : MonoBehaviour {
         
         mySource.clip = myClip;
         textMessages.text = textBank.s1;
-        currentText = 1;
+        currentText = 0;
     }
 
 	void Controller_PadClicked (object sender, ClickedEventArgs e)
@@ -72,8 +75,9 @@ public class Texting : MonoBehaviour {
 
 	}
     public bool vibrate;
-	void Update () {
-		//device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
+    void Update()
+    {
+        //device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
 
         //USE a,b,c,d on keyboard for testing purposes
         if (vibrate)
@@ -81,113 +85,191 @@ public class Texting : MonoBehaviour {
             VibrateController();
         }
 
-		//Josh's String Testing Below (kyler commented out for testing)
-		//if (Input.GetMouseButtonDown (0)) {
-		//	textMessages.text = textBank.s14;
+        //Josh's String Testing Below (kyler commented out for testing)
+        //if (Input.GetMouseButtonDown (0)) {
+        //	textMessages.text = textBank.s14;
         //}
 
 
+        if (beingHandled)
+        {
 
-        //1-->A  2-->B  3-->C  4-->D
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 14)
-        {
-            textMessages.text = textBank.s1;
-            currentText = 1;
-        }
+            //1-->A  2-->B  3-->C  4-->D
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 14)
+            {
+                //StartCoroutine(Delay());            // waits for 5 seconds before next input can be accepted
+                textMessages.text = textBank.s1;
+                currentText = 1;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 13)
-        {
-            textMessages.text = textBank.s14;
-            currentText = 14;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 13)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s14;
+                currentText = 14;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 12)
-        {
-            textMessages.text = textBank.s13;
-            currentText = 13;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 12)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s13;
+                currentText = 13;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 11)
-        {
-            textMessages.text = textBank.s13;
-            currentText = 13;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 11)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s13;
+                currentText = 13;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 10)
-        {
-            textMessages.text = textBank.s11;
-            currentText = 11;
-        }
-        else if ((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) && currentText == 10)
-        {
-            textMessages.text = textBank.s12;
-            currentText = 12;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 10)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s11;
+                currentText = 11;
+                mySource.Play();
+            }
+            else if ((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3)) && currentText == 10)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s12;
+                currentText = 12;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 9)
-        {
-            textMessages.text = textBank.s10;
-            currentText = 10;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 9)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s10;
+                currentText = 10;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 8)
-        {
-            textMessages.text = textBank.s10;
-            currentText = 10;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 8)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s10;
+                currentText = 10;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 7)
-        {
-            textMessages.text = textBank.s8;
-            currentText = 8;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && currentText == 7)
-        {
-            textMessages.text = textBank.s9;
-            currentText = 9;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 7)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s8;
+                currentText = 8;
+                mySource.Play();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3) && currentText == 7)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s9;
+                currentText = 9;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 6)
-        {
-            textMessages.text = textBank.s7;
-            currentText = 7;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 6)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s7;
+                currentText = 7;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 5)
-        {
-            textMessages.text = textBank.s6;
-            currentText = 6;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 5)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s6;
+                currentText = 6;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 4)
-        {
-            textMessages.text = textBank.s5;
-            currentText = 5;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 4)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s5;
+                currentText = 5;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 3)
-        {
-            textMessages.text = textBank.s4;
-            currentText = 4;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 3)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s4;
+                currentText = 4;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 2)
-        {
-            textMessages.text = textBank.s3;
-            currentText = 3;
-        }
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 2)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s3;
+                currentText = 3;
+                mySource.Play();
+            }
 
-        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) && currentText == 1)
-        {
-            textMessages.text = textBank.s2;
-            currentText = 2;
-            mySource.Play();
-        }
-        else if((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 1){
-            textMessages.text = textBank.s5;
-            currentText = 5;
-            mySource.Play();
-        }
+            if (currentText == 1)
+            {
+                if (!soundPlayed)
+                {
+                    textMessages.text = textBank.s2;
+                    mySource.Play();
+                    soundPlayed = true;
+                    beingHandled = false;
+                    currentText = 2;
+                }
 
+                /*if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)))
+                {
+                    textMessages.text = textBank.s2;
+                    currentText = 2;
+                    //pressed = true;
+                }
+                else if ((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4)))
+                {
+                    textMessages.text = textBank.s5;
+                    currentText = 5;
+                    //pressed = true;
+                }*/
+            }
+
+            /*if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) && currentText == 1)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s2;
+                currentText = 2;
+                mySource.Play();
+            }
+            else if ((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 1)
+            {
+                //StartCoroutine(Delay());
+                textMessages.text = textBank.s5;
+                currentText = 5;
+                mySource.Play();
+            }*/
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                textMessages.text = textBank.s0;
+                StartCoroutine(Delay());
+                currentText = 1;
+                //pressed = false;
+            }
+        }
     }
+
+    IEnumerator Delay()
+    {
+        beingHandled = false;
+        yield return new WaitForSeconds(5);
+        beingHandled = true;
+    }
+
 }
