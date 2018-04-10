@@ -5,9 +5,8 @@ using UnityEngine.UI;
 
 public class HitFemale : MonoBehaviour
 {
-
-    private static bool justHit = false;
-    private static bool notHit = true;
+    private bool justHit = false;
+    private bool notHit = true;
     public Text PedHit;
     private void Start()
     {
@@ -34,7 +33,7 @@ public class HitFemale : MonoBehaviour
         {
             if (notHit)
             {
-                EndCredits.addToVictims(1);
+				CreditManager.victimNumbers.Add (1);
                 notHit = false;
             }
             GoingOffRoadDemeritCounter.setDemerits(20);
