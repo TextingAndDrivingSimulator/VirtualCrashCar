@@ -36,10 +36,15 @@ public class VRUIInput : MonoBehaviour
 	private void HandlePointerIn(object sender, PointerEventArgs e)
 	{
 		var button = e.target.GetComponent<Button>();
+		var performAction = e.target.GetComponent<SwapImageOnHover> ();
 		if (button != null)
 		{
 			button.Select();
 			Debug.Log("HandlePointerIn", e.target.gameObject);
+		}
+		if (performAction != null)
+		{
+			performAction.gainFocus ();
 		}
 	}
 
@@ -47,10 +52,15 @@ public class VRUIInput : MonoBehaviour
 	{
 
 		var button = e.target.GetComponent<Button>();
+		var performAction = e.target.GetComponent<SwapImageOnHover> ();
 		if (button != null)
 		{
 			EventSystem.current.SetSelectedGameObject(null);
 			Debug.Log("HandlePointerOut", e.target.gameObject);
+		}
+		if (performAction != null)
+		{
+			performAction.loseFocus ();
 		}
 	}
 }
