@@ -80,19 +80,19 @@ public class Texting : MonoBehaviour {
     void Update()
     {
         //device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
-        //myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
+        myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
 
         // A
-        //device.GetAxis().x < 0 && device.GetAxis().y > 0
+		//myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0
 
         // B
-        //device.GetAxis ().x > 0 && device.GetAxis ().y > 0
+		//myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0
 
         // C
-        //device.GetAxis ().x > 0 && device.GetAxis ().y < 0
+		//myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0
 
         // D
-        //device.GetAxis ().x < 0 && device.GetAxis ().y < 0
+		//myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0
 
         if (vibrate)
         {
@@ -319,7 +319,7 @@ public class Texting : MonoBehaviour {
             //Note: HTC vive touchpad will probably be sensitive to a single hover over to be "selected" for chosen text
             //possibly look into including multiple simultanous input options (eg. touchpad + trigger or grip button)
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) && currentText == 0)
+			if (((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0)) && currentText == 0)
             {
 				Debug.Log ("Entered if 1 wtf...");
                 textMessages.text = textBank.s0;
