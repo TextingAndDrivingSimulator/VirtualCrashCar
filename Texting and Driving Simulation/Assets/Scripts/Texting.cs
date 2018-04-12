@@ -54,6 +54,7 @@ public class Texting : MonoBehaviour {
         textMessages.text = textBank.s1;
         currentText = 0;
         selection = 0;
+		Debug.Log ("Start() is a go");
     }
 
 	void Controller_PadClicked (object sender, ClickedEventArgs e)
@@ -79,7 +80,7 @@ public class Texting : MonoBehaviour {
     void Update()
     {
         //device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
-        myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
+        //myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
 
         // A
         //device.GetAxis().x < 0 && device.GetAxis().y > 0
@@ -109,7 +110,8 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s1;
                     mySource.Play();
-                    beingHandled = false;
+					VibrateController();
+					beingHandled = false;
                     currentText = 1;
                     selection = 0;
                 }
@@ -121,7 +123,8 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s14;
                     mySource.Play();
-                    beingHandled = false;
+					VibrateController();
+					beingHandled = false;
                     currentText = 14;
                     selection = 0;
                 }
@@ -133,6 +136,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s13;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 13;
                     selection = 0;
@@ -145,6 +149,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s13;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 13;
                     selection = 0;
@@ -157,6 +162,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s11;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 11;
                     selection = 0;
@@ -165,6 +171,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s12;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 12;
                     selection = 0;
@@ -177,6 +184,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s10;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 10;
                     selection = 0;
@@ -189,6 +197,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s10;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 10;
                     selection = 0;
@@ -201,6 +210,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s8;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 8;
                     selection = 0;
@@ -209,6 +219,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s9;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 9;
                     selection = 0;
@@ -221,6 +232,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s7;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 7;
                     selection = 0;
@@ -233,6 +245,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s6;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 6;
                     selection = 0;
@@ -245,6 +258,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s5;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 5;
                     selection = 0;
@@ -257,6 +271,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s4;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 4;
                     selection = 0;
@@ -269,6 +284,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s3;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 3;
                     selection = 0;
@@ -281,6 +297,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s2;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 2;
                     selection = 0;
@@ -289,6 +306,7 @@ public class Texting : MonoBehaviour {
                 {
                     textMessages.text = textBank.s5;
                     mySource.Play();
+					VibrateController();
                     beingHandled = false;
                     currentText = 5;
                     selection = 0;
@@ -303,6 +321,7 @@ public class Texting : MonoBehaviour {
 
             if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) && currentText == 0)
             {
+				Debug.Log ("Entered if 1 wtf...");
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 currentText = 1;
@@ -310,7 +329,8 @@ public class Texting : MonoBehaviour {
             }
             else if ((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 0)
             {
-                textMessages.text = textBank.s0;
+				Debug.Log ("Entered if 2 wtf...");
+				textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 currentText = 1;
                 selection = 5;
