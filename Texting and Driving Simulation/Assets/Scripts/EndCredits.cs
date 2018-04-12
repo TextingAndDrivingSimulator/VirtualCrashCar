@@ -58,8 +58,7 @@ public class EndCredits : MonoBehaviour {
 			v = carPic3;
 			break;
 		}
-		int i = CreditManager.victims.Count;
-		CreditManager.victims[i] = v;
+        CreditManager.victims.Add(v);
 	}
 
 
