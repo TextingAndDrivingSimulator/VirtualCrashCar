@@ -82,12 +82,12 @@ namespace UnityStandardAssets.Vehicles.Car
             m_StartedSound = false;
         }
 
-
+		public Camera myCamera;
         // Update is called once per frame
         private void Update()
         {
             // get the distance to main camera
-            float camDist = (Camera.main.transform.position - transform.position).sqrMagnitude;
+            float camDist = (myCamera.transform.position - transform.position).sqrMagnitude;
 
             // stop sound if the object is beyond the maximum roll off distance
             if (m_StartedSound && camDist > maxRolloffDistance*maxRolloffDistance)
@@ -180,5 +180,13 @@ namespace UnityStandardAssets.Vehicles.Car
         {
             return (1.0f - value)*from + value*to;
         }
+
+		public void start() {
+			if (myCamera == null) {
+				myCamera = Camera.main;
+			}
+		}
+				
     }
+
 }
