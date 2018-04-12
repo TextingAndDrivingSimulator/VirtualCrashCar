@@ -147,7 +147,12 @@ public class SteamVR_Controller
 			for (uint i = 0; i < devices.Length; i++)
 				devices[i] = new Device(i);
 		}
-
+		if (deviceIndex >= devices.Length) {
+			return null;
+		}
+		if (deviceIndex == -1) {
+			return null;
+		}
 		return devices[deviceIndex];
 	}
 
