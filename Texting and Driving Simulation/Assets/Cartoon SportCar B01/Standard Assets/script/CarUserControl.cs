@@ -34,9 +34,13 @@ namespace UnityStandardAssets.Vehicles.Car
         private void FixedUpdate()
         {
             // pass the input to the car!
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-		
-
+            float h = 0;
+			if (Input.GetKey ("a")) {
+				h += -1;
+			}
+			if (Input.GetKey ("d")) {
+				h += 1;
+			}
 
 			int arduino_reading = wheel_values.GetWheelCurrentValue ();
 			if (arduino_reading != -1) {
@@ -51,10 +55,16 @@ namespace UnityStandardAssets.Vehicles.Car
 			}
 			Vector3 newLocalRotation = new Vector3 (0, h * 180.0f, 0);
 			wheelToRotate.transform.localRotation = Quaternion.Euler( newLocalRotation );
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
+			float v = 0;
+			if ( Input.GetKey("w") ) {
+				v = 1;
+			} 
+			if ( Input.GetKey("s") ) {
+				v = -1;
+			}
 #if !MOBILE_INPUT
             float handbrake = CrossPlatformInputManager.GetAxis("Jump");
-            m_Car.Move(h, v, v, handbrake);
+            m_Car.Move(h/3.0f, v, v, handbrake);
 #else
             m_Car.Move(h, v, v, 0f);
 #endif
