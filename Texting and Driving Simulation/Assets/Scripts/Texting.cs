@@ -16,6 +16,7 @@ public class Texting : MonoBehaviour {
 
 	private SteamVR_TrackedObject trackedObject;
 	private SteamVR_Controller.Device device;
+    private SteamVR_Controller.Device myDevice;
 
 	private SteamVR_TrackedController controller;
 
@@ -78,17 +79,28 @@ public class Texting : MonoBehaviour {
     void Update()
     {
         //device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
+        myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
 
-        //USE a,b,c,d on keyboard for testing purposes
+        // A
+        //device.GetAxis().x < 0 && device.GetAxis().y > 0
+
+        // B
+        //device.GetAxis ().x > 0 && device.GetAxis ().y > 0
+
+        // C
+        //device.GetAxis ().x > 0 && device.GetAxis ().y < 0
+
+        // D
+        //device.GetAxis ().x < 0 && device.GetAxis ().y < 0
+
         if (vibrate)
         {
             VibrateController();
         }
 
-
         if (beingHandled)
         {
-
+            //USE 1,2,3,4 on keyboard for testing purposes
             //1-->A  2-->B  3-->C  4-->D
 
             if (currentText == 14)
@@ -286,6 +298,9 @@ public class Texting : MonoBehaviour {
         }
         else
         {
+            //Note: HTC vive touchpad will probably be sensitive to a single hover over to be "selected" for chosen text
+            //possibly look into including multiple simultanous input options (eg. touchpad + trigger or grip button)
+
             if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) && currentText == 0)
             {
                 textMessages.text = textBank.s0;
