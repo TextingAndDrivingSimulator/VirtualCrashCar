@@ -51646,6 +51646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1113154262}
   - component: {fileID: 1113154263}
+  - component: {fileID: 1113154264}
   m_Layer: 9
   m_Name: Hand2
   m_TagString: Untagged
@@ -51696,6 +51697,18 @@ MonoBehaviour:
   controllerPrefab: {fileID: 168468, guid: 3f39fc63a93686e4a8e9168ee73f24d9, type: 2}
   showDebugText: 0
   spewDebugText: 0
+--- !u!114 &1113154264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113154261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c6850e5377ea1b48bc150e72fedb1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toDisable: {fileID: 1098755336}
 --- !u!1 &1122438727
 GameObject:
   m_ObjectHideFlags: 0
