@@ -15,13 +15,23 @@ public class DisableOnVrControllerButtonPress : MonoBehaviour {
 		}
 
 	}
-	
+		
+	bool released = true;
 	// Update is called once per frame
 	void Update () {
 		
 		float gripValue = Input.GetAxis ("GripButton");
-	
-		toDisable.SetActive (gripValue == 0);
+
+		if (gripValue == 1) {
+			if (released) {
+				toDisable.SetActive (!toDisable.activeSelf);
+				released = false;
+			}
+
+		} else {
+			released = true;
+		}
+
 	
 	}
 }

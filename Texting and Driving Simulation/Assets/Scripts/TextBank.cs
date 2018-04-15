@@ -6,7 +6,7 @@ public class TextBank : MonoBehaviour {
 	public string s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14;
 	void Start () {
 
-        s0 = "";
+        s0 = "Press the grip buttons on the controller to hide the phone. Press them again to show the phone.";
 		s1 = "\"Hey r u on ur way to my place rn\"\n\nA) yeah y\nB) not yet\nC) on my way\nD) in a min";
 		s2 = "\"can u grab some munchies\"\n\nA) no im drivin\nB) ye were at\nC) im not hungry\nD) ill stop at bk";
 		s3 = "\"Hey u almost here yet?\"\n\nA) ye\nB) no\nC) havent left yet\nD) stop textin me";
