@@ -8,9 +8,13 @@ public class HitMale1 : MonoBehaviour
     private bool justHit = false;
     private bool notHit = true;
     public Text PedHit;
+	private AudioSource ouch;
+	public GameObject cartoonCar;
+
     private void Start()
     {
         PedHit.enabled = false;
+		ouch = cartoonCar.GetComponent<AudioSource>();
     }
 
     IEnumerator flashTime(float time, Text text)
@@ -36,6 +40,7 @@ public class HitMale1 : MonoBehaviour
                 CreditManager.victimNumbers.Add(5);
                 notHit = false;
             }
+			ouch.Play ();
             GoingOffRoadDemeritCounter.setDemerits(20);
             StartCoroutine(flashTime(3, PedHit)); //Change the first parameter of flashTime to change the amount of time the text is on.
             StartCoroutine(hitTime());

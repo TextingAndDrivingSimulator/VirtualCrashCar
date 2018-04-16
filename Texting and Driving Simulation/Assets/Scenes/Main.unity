@@ -10759,7 +10759,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
@@ -15262,6 +15262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
+  cartoonCar: {fileID: 1702990068}
 --- !u!114 &245042691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20070,6 +20071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
+  cartoonCar: {fileID: 1702990068}
 --- !u!114 &349787773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21029,6 +21031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
+  cartoonCar: {fileID: 1702990068}
 --- !u!1 &374182565
 GameObject:
   m_ObjectHideFlags: 0
@@ -23921,7 +23924,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 441602646}
   m_LocalRotation: {x: -0, y: 0.07243779, z: -0, w: 0.9973729}
-  m_LocalPosition: {x: -0.22, y: 0.87200004, z: -0.168}
+  m_LocalPosition: {x: -0.22, y: 0.886, z: -0.168}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1968118751}
@@ -30187,6 +30190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
+  cartoonCar: {fileID: 1702990068}
 --- !u!143 &578163211
 CharacterController:
   m_ObjectHideFlags: 0
@@ -40595,6 +40599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
+  cartoonCar: {fileID: 1702990068}
 --- !u!114 &827029915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72707,6 +72712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
+  cartoonCar: {fileID: 1702990068}
 --- !u!1 &1531477910
 GameObject:
   m_ObjectHideFlags: 0
@@ -80817,6 +80823,7 @@ GameObject:
   - component: {fileID: 1702990072}
   - component: {fileID: 1702990071}
   - component: {fileID: 1702990070}
+  - component: {fileID: 1702990073}
   m_Layer: 9
   m_Name: Cartoon_SportCar_B01
   m_TagString: Untagged
@@ -80900,6 +80907,87 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!82 &1702990073
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702990068}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300001, guid: 95096f29d1ddcd647ace66f3641d42f5,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 2c9353fc6166d4154a784f36068b8555, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1704170623
 GameObject:
   m_ObjectHideFlags: 0
