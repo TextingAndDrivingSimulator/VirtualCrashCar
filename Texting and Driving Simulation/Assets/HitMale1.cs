@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HitFemale : MonoBehaviour
+public class HitMale1 : MonoBehaviour
 {
     private bool justHit = false;
     private bool notHit = true;
@@ -37,24 +37,10 @@ public class HitFemale : MonoBehaviour
         {
             if (notHit)
             {
-				CreditManager.victimNumbers.Add (1);
+                CreditManager.victimNumbers.Add(5);
                 notHit = false;
             }
-            // THIS IS WHERE TO ADD PEDESTRIAN PHYSICS
-
-            // (1) Stop 'walking' Animation from playing
-            //GetComponent<Animator>().enabled = false;
-            
-            // (2) Get the direction of where pedestrian was hit ..?
-            // this would be 'transform.forward' below ....?
-
-            // (3) Apply force to pedestrian (need rigidbody component for this part)
-            //GetComponent<Rigidbody>().AddForce(transform.forward * 500);
-            //GetComponent<Rigidbody>().useGravity = true;
-
-            //////////////////////////////////////////
-
-            ouch.Play ();
+			ouch.Play ();
             GoingOffRoadDemeritCounter.setDemerits(20);
             StartCoroutine(flashTime(3, PedHit)); //Change the first parameter of flashTime to change the amount of time the text is on.
             StartCoroutine(hitTime());

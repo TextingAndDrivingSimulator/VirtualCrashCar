@@ -12,6 +12,10 @@ public class EndCredits : MonoBehaviour {
     public GameObject carPic1;
     public GameObject carPic2;
     public GameObject carPic3;
+    public GameObject malePic1;
+    public GameObject malePic2;
+    public GameObject carPic4;
+    public GameObject carPic5;
 
 
     void printStory()
@@ -34,6 +38,10 @@ public class EndCredits : MonoBehaviour {
 		CreditManager.noVic.Add(carPic1);
 		CreditManager.noVic.Add(carPic2);
 		CreditManager.noVic.Add(carPic3);
+        CreditManager.noVic.Add(malePic1);
+        CreditManager.noVic.Add(malePic2);
+        CreditManager.noVic.Add(carPic4);
+        CreditManager.noVic.Add(carPic5);
 		StartCoroutine(Credits());
 		foreach ( int i in CreditManager.victimNumbers ) {
 			this.addToVictims (i);
@@ -57,6 +65,18 @@ public class EndCredits : MonoBehaviour {
 		case 4:
 			v = carPic3;
 			break;
+        case 5:
+            v = malePic1;
+            break;
+        case 6:
+            v = malePic2;
+            break;
+        case 7:
+            v = carPic4;
+            break;
+        case 8:
+            v = carPic5;
+            break;
 		}
         CreditManager.victims.Add(v);
 	}
