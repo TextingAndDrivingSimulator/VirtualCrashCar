@@ -15377,6 +15377,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.2671385, y: 0.5296004, z: 1}
   m_Center: {x: -0.012312654, y: 0.35356265, z: -0.00000024043368}
+--- !u!114 &251153227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 251153219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c4de6c1ab679a4ba97a52fe62048ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userCar: {fileID: 1968118746}
+  CarHit: {fileID: 1208351625}
 --- !u!1 &255408711
 GameObject:
   m_ObjectHideFlags: 0
@@ -51990,7 +52003,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1122634227
+--- !u!114 &1122634226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -51998,7 +52011,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1122634206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa86a348d373d3740b1285bdb4976814, type: 3}
+  m_Script: {fileID: 11500000, guid: 5af66ce9972d28b459ed1638cced13e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   userCar: {fileID: 1968118746}
