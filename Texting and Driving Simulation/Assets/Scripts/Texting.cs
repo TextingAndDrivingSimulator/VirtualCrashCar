@@ -83,16 +83,18 @@ public class Texting : MonoBehaviour {
         myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
 
         // A
-		//myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0
+        //myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0
 
         // B
-		//myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0
+        //myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0
 
         // C
-		//myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0
+        //myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0
 
         // D
-		//myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0
+        //myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0
+
+        // || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0) || (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0) || (myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0)
 
         if (vibrate)
         {
@@ -319,106 +321,104 @@ public class Texting : MonoBehaviour {
             //Note: HTC vive touchpad will probably be sensitive to a single hover over to be "selected" for chosen text
             //possibly look into including multiple simultanous input options (eg. touchpad + trigger or grip button)
 
-			if (((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0)) && currentText == 0)
+			if (((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0)) && currentText == 0)
             {
-				Debug.Log ("Entered if 1 wtf...");
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 currentText = 1;
                 selection = 2;
             }
-            else if ((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 0)
+            else if ((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 0)
             {
-				Debug.Log ("Entered if 2 wtf...");
 				textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 currentText = 1;
                 selection = 5;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 2)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 2)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 3;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 3)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 3)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 4;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 4)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 4)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 5;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 5)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 5)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 6;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 6)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 6)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 7;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 7)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 7)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 8;
             }
-            else if ((Input.GetKeyDown(KeyCode.Alpha3)) && currentText == 7)
+            else if ((Input.GetKeyDown(KeyCode.Alpha3) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0)) && currentText == 7)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 9;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 10)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 10)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 11;
             }
-            else if ((Input.GetKeyDown(KeyCode.Alpha2) || (Input.GetKeyDown(KeyCode.Alpha3))) && currentText == 10)
+            else if ((Input.GetKeyDown(KeyCode.Alpha2) || (Input.GetKeyDown(KeyCode.Alpha3)) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0)) && currentText == 10)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 12;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 11)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 11)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 13;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 12)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 12)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 13;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 13)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 13)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
                 selection = 14;
             }
 
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentText == 14)
+            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 14)
             {
                 textMessages.text = textBank.s0;
                 StartCoroutine(Delay());
