@@ -92,6 +92,8 @@ public class Texting : MonoBehaviour {
 	}
 	public float lastChangedMessageTime = 0;
 	private bool displayedMessage = false;
+	private float vibrateForThisTimeInterval = 3.0f;
+	private float vibrateUntilTime = 0.0f;
     void Update()
     {
 		myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
@@ -101,9 +103,13 @@ public class Texting : MonoBehaviour {
 			
 			if (!displayedMessage) {
 				textMessages.text = currentTextMessage.FormattedMessage ();
-				VibrateController ();
 				mySource.Play();
+				vibrateUntilTime = Time.time + vibrateForThisTimeInterval;
 				displayedMessage = true;
+			}
+
+			if (vibrateUntilTime < Time.time) {
+				VibrateController ();
 			}
 
 			switch (responseOption) {
