@@ -35,14 +35,6 @@ public class Texting : MonoBehaviour {
 	}
 
 	void Start () {
-        //trackedObject = GetComponent<SteamVR_TrackedObject>();    //toggle
-        //controller = GetComponent<SteamVR_TrackedController> ();   //toggle
-        //controller.PadClicked += Controller_PadClicked;           //toggle
-
-        //textMessages.text = "Welcome to your smart phone!";
-        //mySource = GetComponent<AudioSource>();
-        //mySource.Play();
-        //yield return new WaitForSeconds(mySource.clip.length);
 		textBank.Start();
         mySource.clip = myClip;
 		Debug.Log ("Start() is a go");
@@ -54,19 +46,6 @@ public class Texting : MonoBehaviour {
 		if (myDevice.GetAxis ().x != 0 || myDevice.GetAxis ().y != 0) {
 			Debug.Log (myDevice.GetAxis ().x + " " + myDevice.GetAxis ().y);
 		}
-
-		//Reading out x,y values to find button selected
-		/*
-		if (device.GetAxis ().x > 0 && device.GetAxis ().y > 0) {
-			//b selected
-		} else if (device.GetAxis ().x > 0 && device.GetAxis ().y < 0) {
-			//c selected
-		} else if (device.GetAxis ().x < 0 && device.GetAxis ().y > 0) {
-			//a selected
-		} else if (device.GetAxis ().x < 0 && device.GetAxis ().y < 0) {
-			//d selected
-		}*/
-
 	}
 
 	private ResponseOption GetOptionCurrentlyDepressedBack() {
@@ -127,9 +106,7 @@ public class Texting : MonoBehaviour {
 			currentTextMessage = currentTextMessage.optionDReply;
 			break;
         }
-		Debug.Log ("currentTextMessage is " + (currentTextMessage==null));
-		Debug.Log ("currentTextMessage is " + textMessages.text);
-		textMessages.text = currentTextMessage.messageContent;
+		textMessages.text = currentTextMessage.FormattedMessage();
     }
 
 }

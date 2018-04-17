@@ -94,6 +94,13 @@ public class TextMessage {
 	public string optionBReplyTxt;
 	public string optionCReplyTxt;
 	public string optionDReplyTxt;
+
+	public string FormattedMessage() {
+		return messageContent + "\n A) " + this.optionAReplyTxt
+		+ "\n B) " + this.optionBReplyTxt
+		+ "\n C) " + this.optionCReplyTxt
+		+ "\n D) " + this.optionDReplyTxt;
+	}
 }
 
 
