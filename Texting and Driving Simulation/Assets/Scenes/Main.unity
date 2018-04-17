@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41862404, g: 0.5551671, b: 0.6838967, a: 1}
+  m_IndirectSpecularColor: {r: 0.41860926, g: 0.5555527, b: 0.6842196, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -36659,7 +36659,7 @@ MonoBehaviour:
   enableVRControls: 1
   myClip: {fileID: 8300000, guid: 48d4a4e6753c85f4ea2a21e4ed72a477, type: 3}
   mySource: {fileID: 732834300}
-  vibrate: 0
+  lastChangedMessageTime: 0
 --- !u!82 &732834300
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43877,7 +43877,7 @@ MonoBehaviour:
   enableVRControls: 0
   myClip: {fileID: 8300000, guid: 48d4a4e6753c85f4ea2a21e4ed72a477, type: 3}
   mySource: {fileID: 910750092}
-  vibrate: 0
+  lastChangedMessageTime: 0
 --- !u!114 &910750087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72705,6 +72705,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
   cartoonCar: {fileID: 1702990068}
+--- !u!54 &1529974374
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1529974369}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1531477910
 GameObject:
   m_ObjectHideFlags: 0

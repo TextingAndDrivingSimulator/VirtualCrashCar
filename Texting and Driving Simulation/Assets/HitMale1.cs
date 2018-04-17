@@ -42,6 +42,23 @@ public class HitMale1 : MonoBehaviour
             }
 			ouch.Play ();
             GoingOffRoadDemeritCounter.setDemerits(20);
+
+            // THIS IS WHERE TO ADD PEDESTRIAN PHYSICS
+
+            // (1) Stop 'walking' Animation from playing
+            //     switch to idle "default" mode
+            //     just add a condition in transitions
+            //      in animator window
+
+            // (2) Get the direction of where pedestrian was hit ..?
+            // this would be 'transform.forward' below ....?
+
+            // (3) Apply force to pedestrian (need rigidbody component for this part)
+            //GetComponent<Rigidbody>().AddForce(transform.forward * 500);
+            //GetComponent<Rigidbody>().useGravity = true;
+            
+            //////////////////////////////////////////
+
             StartCoroutine(flashTime(3, PedHit)); //Change the first parameter of flashTime to change the amount of time the text is on.
             StartCoroutine(hitTime());
         }

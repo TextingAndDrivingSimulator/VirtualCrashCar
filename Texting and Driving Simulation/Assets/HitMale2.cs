@@ -42,6 +42,13 @@ public class HitMale2 : MonoBehaviour
             }
 			ouch.Play ();
             GoingOffRoadDemeritCounter.setDemerits(20);
+
+            // amount of force determined by speed of car
+
+            GetComponent<Rigidbody>().AddForce(transform.forward * 500);
+            GetComponent<Rigidbody>().useGravity = true;
+
+
             StartCoroutine(flashTime(3, PedHit)); //Change the first parameter of flashTime to change the amount of time the text is on.
             StartCoroutine(hitTime());
         }
