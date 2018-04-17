@@ -2,25 +2,99 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextBank : MonoBehaviour {
-	public string s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14;
-	void Start () {
+enum ResponseOption {
+	OptionA, OptionB, OptionC, OptionD, NoOption
+}
 
-        s0 = "Press the grip buttons on the controller to hide the phone. Press them again to show the phone.";
-		s1 = "\"Hey r u on ur way to my place rn\"\n\nA) yeah y\nB) not yet\nC) on my way\nD) in a min";
-		s2 = "\"can u grab some munchies\"\n\nA) no im drivin\nB) ye were at\nC) im not hungry\nD) ill stop at bk";
-		s3 = "\"Hey u almost here yet?\"\n\nA) ye\nB) no\nC) havent left yet\nD) stop textin me";
-		s4 = "\"What is takin so long...\"\n\nA) im drivin chill\nB) traffic :(\nC) srry\nD) almost there";
-		s5 = "\"Well, hurry up!!! \"\n\nA) im tryin\nB) calm down\nC) no\nD) id be there if i wasn’t texting";
-		s6 = "\"hey! have u heard the news??\"\n\nA) no! what’s up?\nB) i don’t think so…\nC) lol no. tell me!\nD) ofc. i’ve heard enough of it";
-		s7 = "\"Khloe Kardashian is pregnant!! pics on insta\"\n\nA) what!?! GET OUT!!\nB) no way!\nC) oh lol. that’s old news\nD) please. idk y u follow that stuff";
-		s8 = "\"please tell me yur close”\n\nA) 5 min\nB) nope\nC) where should i park?\nD) ye which apt was it again";
-		s9 = "\"did you know teens are 4x more likely than adults to crash or almost crash when on a cell phone.\"\n\nA) oh wow\nB) no way!\nC) yikes\nD) ¯\\_(ツ)_/¯";
-		s10 = "\"I just heard the funniest joke! wanna hear it?\"\n\nA) yeah sure\nB) ugh. ur jokes are never funny\nC) mmmm i’ll pass\nD) okay. But it better be good….";
-		s11 = "\"knock knock \"\n\nA) who’s there?\nB) stahp.\nC) no soliciting\nD) whomst approacheth my abode?";
-		s12 = "\"Ur gonna hear it anyway.              knock knock \"\n\nA) who’s there?\nB) stahp.\nC) no soliciting\nD) whomst approacheth my abode?";
-		s13 = "\"Ur car\"\n\nA) Ur car who?\nB) Ur car or my car?\nC) im not doin this\nD) stahp.";
-		s14 = "\"Ur car shouldnt be knocking, you should get that checked out\"\n\nA) lol\nB) wow\nC) hahaha\nD) funny…";
+public class TextBank {
+	public TextMessage getStartingMessage() {
+		return msgOne;
+	}
+
+	private TextMessage msgOne = new TextMessage ();
+	private TextMessage msgTwo = new TextMessage ();
+	private TextMessage msgThree = new TextMessage ();
+	private TextMessage msgFour = new TextMessage ();
+	private TextMessage msgFive = new TextMessage ();
+
+	private TextMessage deadEnd = new TextMessage ();
+	public void Start () {
+		msgOne.messageContent = "\"Hey r u on ur way to my place rn";
+		msgOne.optionAReplyTxt = "yeah why";
+		msgOne.optionAReply = msgTwo;
+		msgOne.optionBReplyTxt = "not yet";
+		msgOne.optionBReply = msgFive;
+		msgOne.optionCReplyTxt = "on my way";
+		msgOne.optionCReply = msgTwo;
+		msgOne.optionDReplyTxt = "in a min";
+		msgOne.optionDReply = msgFive;
+
+		msgTwo.messageContent = "\"Can you grab some munchies";
+		msgTwo.optionAReply = msgThree;
+		msgTwo.optionBReply = msgThree;
+		msgTwo.optionCReply = msgThree;
+		msgTwo.optionDReply = msgThree;
+		msgTwo.optionAReplyTxt = "no I'm driving";
+		msgTwo.optionBReplyTxt = "ye were at";
+		msgTwo.optionCReplyTxt = "im not hungry";
+		msgTwo.optionDReplyTxt = "ilstopatbk";
+
+
+		msgThree.messageContent = "\"Hey you almost there yet?";
+		msgThree.optionAReply = msgFour;
+		msgThree.optionBReply = msgFour;
+		msgThree.optionCReply = msgFour;
+		msgThree.optionDReply = msgFour;
+		msgThree.optionAReplyTxt = "ye";
+		msgThree.optionBReplyTxt = "no";
+		msgThree.optionCReplyTxt = "haventleftinayet";
+		msgThree.optionDReplyTxt = "stop texting me";
+
+		msgFour.messageContent = "\"What is taking so long?";
+		msgFour.optionAReply = msgFive;
+		msgFour.optionBReply = msgFive;
+		msgFour.optionCReply = msgFive;
+		msgFour.optionDReply = msgFive;
+		msgFour.optionAReplyTxt = "I'm driving chill";
+		msgFour.optionBReplyTxt = "traffic";
+		msgFour.optionCReplyTxt = "sry";
+		msgFour.optionDReplyTxt = "almost there";
+
+		msgFive.messageContent = "\"Well hurry up";
+		msgFive.optionAReply = deadEnd;
+		msgFive.optionBReply = deadEnd;
+		msgFive.optionCReply = deadEnd;
+		msgFive.optionDReply = deadEnd;
+		msgFive.optionAReplyTxt = "I'm trying";
+		msgFive.optionBReplyTxt = "this is as fast as I can go";
+		msgFive.optionCReplyTxt = "no";
+		msgFive.optionDReplyTxt = "I'd be there if I weren't texting;";
+
+		deadEnd.messageContent = "\"DEAD END";
+		deadEnd.optionAReply = deadEnd;
+		deadEnd.optionBReply = deadEnd;
+		deadEnd.optionCReply = deadEnd;
+		deadEnd.optionDReply = deadEnd;
+		deadEnd.optionAReplyTxt = "DEAD END";
+		deadEnd.optionBReplyTxt = "DEAD END";
+		deadEnd.optionCReplyTxt = "DEAD END";
+		deadEnd.optionDReplyTxt = "DEAD END";
 
 	}
 }
+
+public class TextMessage {
+	public string messageContent;
+	public TextMessage optionAReply;
+	public TextMessage optionBReply;
+	public TextMessage optionCReply;
+	public TextMessage optionDReply;
+
+	public string optionAReplyTxt;
+	public string optionBReplyTxt;
+	public string optionCReplyTxt;
+	public string optionDReplyTxt;
+}
+
+
+

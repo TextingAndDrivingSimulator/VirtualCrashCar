@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class Texting : MonoBehaviour {
 	public Text textMessages;
-	public TextBank textBank;
+	public TextBank textBank = new TextBank ();
 
 	//****************** CITATION *********************************
 	//Inspiration for reading Vive trackpad input from YouTube Tutorial
@@ -13,20 +15,12 @@ public class Texting : MonoBehaviour {
 	//https://www.youtube.com/watch?v=Awr52z9Y670
 	//*************************************************************
 
-
-	private SteamVR_TrackedObject trackedObject;
-	private SteamVR_Controller.Device device;
     private SteamVR_Controller.Device myDevice;
 
-	private SteamVR_TrackedController controller;
-
 	public bool enableVRControls = false;
-    public int currentText;
 
     public AudioClip myClip;
     public AudioSource mySource;
-    private bool beingHandled = false;
-    public int selection;
 
     private void VibrateController() {
 		if (enableVRControls) {
@@ -49,18 +43,16 @@ public class Texting : MonoBehaviour {
         //mySource = GetComponent<AudioSource>();
         //mySource.Play();
         //yield return new WaitForSeconds(mySource.clip.length);
-        
+		textBank.Start();
         mySource.clip = myClip;
-        textMessages.text = textBank.s1;
-        currentText = 0;
-        selection = 0;
 		Debug.Log ("Start() is a go");
+		currentTextMessage = textBank.getStartingMessage ();
     }
 
 	void Controller_PadClicked (object sender, ClickedEventArgs e)
 	{
-		if (device.GetAxis ().x != 0 || device.GetAxis ().y != 0) {
-			Debug.Log (device.GetAxis ().x + " " + device.GetAxis ().y);
+		if (myDevice.GetAxis ().x != 0 || myDevice.GetAxis ().y != 0) {
+			Debug.Log (myDevice.GetAxis ().x + " " + myDevice.GetAxis ().y);
 		}
 
 		//Reading out x,y values to find button selected
@@ -76,363 +68,68 @@ public class Texting : MonoBehaviour {
 		}*/
 
 	}
+
+	private ResponseOption GetOptionCurrentlyDepressedBack() {
+		if (Input.GetKeyDown (KeyCode.Alpha1)) {
+			return ResponseOption.OptionA;
+		}
+		if (Input.GetKeyDown (KeyCode.Alpha2)) {
+			return ResponseOption.OptionB;
+		}
+		if (Input.GetKeyDown (KeyCode.Alpha3)) {
+			return ResponseOption.OptionC;
+		}
+		if (Input.GetKeyDown (KeyCode.Alpha4)) {
+			return ResponseOption.OptionD;
+		}
+
+		if (myDevice == null) {
+			Debug.Log ("No vive controller detected!");
+			return ResponseOption.NoOption;
+		}
+
+		if (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) {
+			return ResponseOption.OptionA;
+		}
+		if (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0) {
+			return ResponseOption.OptionB;
+		}
+		if (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0) {
+			return ResponseOption.OptionC;
+		}
+		if (myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0) {
+			return ResponseOption.OptionD;
+		}
+
+		return ResponseOption.NoOption;
+	}
+
+	private TextMessage currentTextMessage;
+
     public bool vibrate;
     void Update()
     {
-        //device = SteamVR_Controller.Input ((int)trackedObject.index);   //toggle
-        myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
+		myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
 
-        // A
-        //myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0
+		ResponseOption responseOption = GetOptionCurrentlyDepressedBack ();
 
-        // B
-        //myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0
-
-        // C
-        //myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0
-
-        // D
-        //myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0
-
-        // || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0) || (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0) || (myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0)
-
-        if (vibrate)
-        {
-            VibrateController();
+		switch(responseOption) {
+		case ResponseOption.OptionA:
+			currentTextMessage = currentTextMessage.optionAReply;
+			break;
+		case ResponseOption.OptionB:
+			currentTextMessage = currentTextMessage.optionBReply;
+			break;
+		case ResponseOption.OptionC:
+			currentTextMessage = currentTextMessage.optionCReply;
+			break;
+		case ResponseOption.OptionD:
+			currentTextMessage = currentTextMessage.optionDReply;
+			break;
         }
-
-        if (beingHandled)
-        {
-            //USE 1,2,3,4 on keyboard for testing purposes
-            //1-->A  2-->B  3-->C  4-->D
-
-            if (currentText == 14)
-            {
-                if (selection == 1)
-                {
-                    textMessages.text = textBank.s1;
-                    mySource.Play();
-					VibrateController();
-					beingHandled = false;
-                    currentText = 1;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 13)
-            {
-                if (selection == 14)
-                {
-                    textMessages.text = textBank.s14;
-                    mySource.Play();
-					VibrateController();
-					beingHandled = false;
-                    currentText = 14;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 12)
-            {
-                if (selection == 13)
-                {
-                    textMessages.text = textBank.s13;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 13;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 11)
-            {
-                if (selection == 13)
-                {
-                    textMessages.text = textBank.s13;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 13;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 10)
-            {
-                if (selection == 11)
-                {
-                    textMessages.text = textBank.s11;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 11;
-                    selection = 0;
-                }
-                else if (selection == 12)
-                {
-                    textMessages.text = textBank.s12;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 12;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 9)
-            {
-                if (selection == 10)
-                {
-                    textMessages.text = textBank.s10;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 10;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 8)
-            {
-                if (selection == 10)
-                {
-                    textMessages.text = textBank.s10;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 10;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 7)
-            {
-                if (selection == 8)
-                {
-                    textMessages.text = textBank.s8;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 8;
-                    selection = 0;
-                }
-                else if (selection == 9)
-                {
-                    textMessages.text = textBank.s9;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 9;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 6)
-            {
-                if (selection == 7)
-                {
-                    textMessages.text = textBank.s7;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 7;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 5)
-            {
-                if (selection == 6)
-                {
-                    textMessages.text = textBank.s6;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 6;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 4)
-            {
-                if (selection == 5)
-                {
-                    textMessages.text = textBank.s5;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 5;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 3)
-            {
-                if (selection == 4)
-                {
-                    textMessages.text = textBank.s4;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 4;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 2)
-            {
-                if (selection == 3)
-                {
-                    textMessages.text = textBank.s3;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 3;
-                    selection = 0;
-                }
-            }
-
-            if (currentText == 1)
-            {
-                if (selection == 2)
-                {
-                    textMessages.text = textBank.s2;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 2;
-                    selection = 0;
-                }
-                else if (selection == 5)
-                {
-                    textMessages.text = textBank.s5;
-                    mySource.Play();
-					VibrateController();
-                    beingHandled = false;
-                    currentText = 5;
-                    selection = 0;
-                }
-            }
-
-        }
-        else
-        {
-            //Note: HTC vive touchpad will probably be sensitive to a single hover over to be "selected" for chosen text
-            //possibly look into including multiple simultanous input options (eg. touchpad + trigger or grip button)
-
-			if (((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha3)) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0)) && currentText == 0)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                currentText = 1;
-                selection = 2;
-            }
-            else if ((Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 0)
-            {
-				textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                currentText = 1;
-                selection = 5;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 2)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 3;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 3)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 4;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 4)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 5;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 5)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 6;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 6)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 7;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 7)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 8;
-            }
-            else if ((Input.GetKeyDown(KeyCode.Alpha3) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0)) && currentText == 7)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 9;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 10)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 11;
-            }
-            else if ((Input.GetKeyDown(KeyCode.Alpha2) || (Input.GetKeyDown(KeyCode.Alpha3)) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0)) && currentText == 10)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 12;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 11)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 13;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 12)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 13;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 13)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 14;
-            }
-
-            if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y > 0) || (myDevice.GetAxis().x > 0 && myDevice.GetAxis().y < 0) || (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y < 0)) && currentText == 14)
-            {
-                textMessages.text = textBank.s0;
-                StartCoroutine(Delay());
-                selection = 1;
-            }
-
-        }
-    }
-
-    IEnumerator Delay()
-    {
-        beingHandled = false;
-        yield return new WaitForSeconds(5);
-        beingHandled = true;
+		Debug.Log ("currentTextMessage is " + (currentTextMessage==null));
+		Debug.Log ("currentTextMessage is " + textMessages.text);
+		textMessages.text = currentTextMessage.messageContent;
     }
 
 }
