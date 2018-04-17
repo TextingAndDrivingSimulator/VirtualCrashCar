@@ -28,6 +28,7 @@ public class TextBank {
 		msgOne.optionCReply = msgTwo;
 		msgOne.optionDReplyTxt = "in a min";
 		msgOne.optionDReply = msgFive;
+		msgOne.delay = .5f;
 
 		msgTwo.messageContent = "\"Can you grab some munchies";
 		msgTwo.optionAReply = msgThree;
@@ -38,6 +39,7 @@ public class TextBank {
 		msgTwo.optionBReplyTxt = "ye were at";
 		msgTwo.optionCReplyTxt = "im not hungry";
 		msgTwo.optionDReplyTxt = "ilstopatbk";
+		msgTwo.delay = 2.0f;
 
 
 		msgThree.messageContent = "\"Hey you almost there yet?";
@@ -49,6 +51,7 @@ public class TextBank {
 		msgThree.optionBReplyTxt = "no";
 		msgThree.optionCReplyTxt = "haventleftinayet";
 		msgThree.optionDReplyTxt = "stop texting me";
+		msgThree.delay = 3.0f;
 
 		msgFour.messageContent = "\"What is taking so long?";
 		msgFour.optionAReply = msgFive;
@@ -59,6 +62,7 @@ public class TextBank {
 		msgFour.optionBReplyTxt = "traffic";
 		msgFour.optionCReplyTxt = "sry";
 		msgFour.optionDReplyTxt = "almost there";
+		msgFour.delay = 3.0f;
 
 		msgFive.messageContent = "\"Well hurry up";
 		msgFive.optionAReply = deadEnd;
@@ -69,6 +73,7 @@ public class TextBank {
 		msgFive.optionBReplyTxt = "this is as fast as I can go";
 		msgFive.optionCReplyTxt = "no";
 		msgFive.optionDReplyTxt = "I'd be there if I weren't texting;";
+		msgFive.delay = 1.0f;
 
 		deadEnd.messageContent = "\"DEAD END";
 		deadEnd.optionAReply = deadEnd;
@@ -94,6 +99,8 @@ public class TextMessage {
 	public string optionBReplyTxt;
 	public string optionCReplyTxt;
 	public string optionDReplyTxt;
+
+	public float delay = 0;
 
 	public string FormattedMessage() {
 		return messageContent + "\n A) " + this.optionAReplyTxt

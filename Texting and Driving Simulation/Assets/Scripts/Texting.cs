@@ -85,28 +85,46 @@ public class Texting : MonoBehaviour {
 
 	private TextMessage currentTextMessage;
 
-    public bool vibrate;
+	private void BlankTextBank (float delay) {
+		textMessages.text = "";
+		lastChangedMessageTime = delay + Time.time;
+		displayedMessage = false;
+	}
+	public float lastChangedMessageTime = 0;
+	private bool displayedMessage = false;
     void Update()
     {
 		myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
 
 		ResponseOption responseOption = GetOptionCurrentlyDepressedBack ();
+		if (Time.time > lastChangedMessageTime) {
+			
+			if (!displayedMessage) {
+				textMessages.text = currentTextMessage.FormattedMessage ();
+				VibrateController ();
+				mySource.Play();
+				displayedMessage = true;
+			}
 
-		switch(responseOption) {
-		case ResponseOption.OptionA:
-			currentTextMessage = currentTextMessage.optionAReply;
-			break;
-		case ResponseOption.OptionB:
-			currentTextMessage = currentTextMessage.optionBReply;
-			break;
-		case ResponseOption.OptionC:
-			currentTextMessage = currentTextMessage.optionCReply;
-			break;
-		case ResponseOption.OptionD:
-			currentTextMessage = currentTextMessage.optionDReply;
-			break;
-        }
-		textMessages.text = currentTextMessage.FormattedMessage();
+			switch (responseOption) {
+			case ResponseOption.OptionA:
+				currentTextMessage = currentTextMessage.optionAReply;
+				BlankTextBank (currentTextMessage.delay);
+				break;
+			case ResponseOption.OptionB:
+				currentTextMessage = currentTextMessage.optionBReply;
+				BlankTextBank (currentTextMessage.delay);
+				break;
+			case ResponseOption.OptionC:
+				currentTextMessage = currentTextMessage.optionCReply;
+				BlankTextBank (currentTextMessage.delay);
+				break;
+			case ResponseOption.OptionD:
+				currentTextMessage = currentTextMessage.optionDReply;
+				BlankTextBank (currentTextMessage.delay);
+				break;
+			}
+		}
     }
 
 }
