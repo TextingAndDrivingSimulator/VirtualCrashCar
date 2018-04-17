@@ -66,20 +66,20 @@ public class Texting : MonoBehaviour {
 			Debug.Log ("No vive controller detected!");
 			return ResponseOption.NoOption;
 		}
-
-		if (myDevice.GetAxis().x < 0 && myDevice.GetAxis().y > 0) {
-			return ResponseOption.OptionA;
+		if (myDevice.GetPressUp (SteamVR_Controller.ButtonMask.Touchpad)) {
+			if (myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y > 0) {
+				return ResponseOption.OptionA;
+			}
+			if (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0) {
+				return ResponseOption.OptionB;
+			}
+			if (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0) {
+				return ResponseOption.OptionC;
+			}
+			if (myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0) {
+				return ResponseOption.OptionD;
+			}
 		}
-		if (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y > 0) {
-			return ResponseOption.OptionB;
-		}
-		if (myDevice.GetAxis ().x > 0 && myDevice.GetAxis ().y < 0) {
-			return ResponseOption.OptionC;
-		}
-		if (myDevice.GetAxis ().x < 0 && myDevice.GetAxis ().y < 0) {
-			return ResponseOption.OptionD;
-		}
-
 		return ResponseOption.NoOption;
 	}
 
