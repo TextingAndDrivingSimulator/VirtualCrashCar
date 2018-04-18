@@ -72624,7 +72624,7 @@ Prefab:
     - target: {fileID: 9500000, guid: fbc0ba27f9a68d4429fb177dc706ae0d, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 400122, guid: fbc0ba27f9a68d4429fb177dc706ae0d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1
@@ -72712,7 +72712,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1529974369}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.1
   m_UseGravity: 1

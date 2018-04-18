@@ -33,6 +33,7 @@ public class HitMale2 : MonoBehaviour
 
     public void OnCollisionEnter(Collision c)
     {
+
         if (c.gameObject.tag == "Player" && justHit == false)
         {
             if (notHit)
@@ -43,11 +44,18 @@ public class HitMale2 : MonoBehaviour
 			ouch.Play ();
             GoingOffRoadDemeritCounter.setDemerits(20);
 
-            // amount of force determined by speed of car
+            // amount of force determined by speed of car (vary 500 value..?)
+
+            // set animator controller to 'none'
+
+            GetComponent<CapsuleCollider>().enabled = false;
+            GetComponent<CharacterController>().enabled = false;
+            GetComponent<Rigidbody>().isKinematic = false;
 
             GetComponent<Rigidbody>().AddForce(transform.forward * 500);
-            GetComponent<Rigidbody>().useGravity = true;
-
+            GetComponent<CharacterController>().enabled = true;
+            GetComponent<CapsuleCollider>().enabled = true;
+            GetComponent<rotate180>().enabled = false;
 
             StartCoroutine(flashTime(3, PedHit)); //Change the first parameter of flashTime to change the amount of time the text is on.
             StartCoroutine(hitTime());
