@@ -29,7 +29,7 @@ public class TextBank {
 
 	private TextMessage deadEnd = new TextMessage ();
 	public void Start () {
-		msgOne.messageContent = "\"Hey r u on ur way to my place rn\"";
+		msgOne.messageContent = "\"Hey r u on ur way to my place rn\"\n";
 		msgOne.optionAReplyTxt = "yeah why";
 		msgOne.optionAReply = msgTwo;
 		msgOne.optionBReplyTxt = "not yet";
@@ -38,9 +38,9 @@ public class TextBank {
 		msgOne.optionCReply = msgTwo;
 		msgOne.optionDReplyTxt = "in a min";
 		msgOne.optionDReply = msgFive;
-		msgOne.delay = .5f;
+		msgOne.delay = 0.5f;
 
-		msgTwo.messageContent = "\"Can you grab some munchies?\"";
+		msgTwo.messageContent = "\"Can you grab some munchies?\"\n";
 		msgTwo.optionAReply = msgThree;
 		msgTwo.optionBReply = msgThree;
 		msgTwo.optionCReply = msgThree;
@@ -49,10 +49,10 @@ public class TextBank {
 		msgTwo.optionBReplyTxt = "ye were at";
 		msgTwo.optionCReplyTxt = "im not hungry";
 		msgTwo.optionDReplyTxt = "ill stop at bk";
-		msgTwo.delay = 2.0f;
+		msgTwo.delay = 4.5f;
 
 
-		msgThree.messageContent = "\"Hey you almost there yet?\"";
+		msgThree.messageContent = "\"Hey you almost there yet?\"\n";
 		msgThree.optionAReply = msgFour;
 		msgThree.optionBReply = msgFour;
 		msgThree.optionCReply = msgFour;
@@ -61,9 +61,9 @@ public class TextBank {
 		msgThree.optionBReplyTxt = "no";
 		msgThree.optionCReplyTxt = "haven't left yet";
 		msgThree.optionDReplyTxt = "stop texting me";
-		msgThree.delay = 3.0f;
+		msgThree.delay = 7.0f;
 
-		msgFour.messageContent = "\"What is taking so long?\"";
+		msgFour.messageContent = "\"What is taking so long?\"\n";
 		msgFour.optionAReply = msgFive;
 		msgFour.optionBReply = msgFive;
 		msgFour.optionCReply = msgFive;
@@ -72,9 +72,9 @@ public class TextBank {
 		msgFour.optionBReplyTxt = "traffic";
 		msgFour.optionCReplyTxt = "sry";
 		msgFour.optionDReplyTxt = "almost there";
-		msgFour.delay = 3.0f;
+		msgFour.delay = 4.5f;
 
-		msgFive.messageContent = "\"Well hurry up\"";
+		msgFive.messageContent = "\"Well hurry up\"\n";
 		msgFive.optionAReply = msgSix;
 		msgFive.optionBReply = msgSix;
 		msgFive.optionCReply = msgSix;
@@ -83,9 +83,9 @@ public class TextBank {
 		msgFive.optionBReplyTxt = "this is as fast as I can go";
 		msgFive.optionCReplyTxt = "no";
 		msgFive.optionDReplyTxt = "I'd be there if I weren't texting";
-		msgFive.delay = 3.0f;
+		msgFive.delay = 4.5f;
 
-		msgSix.messageContent = "\"hey! have u heard the news??\"";
+		msgSix.messageContent = "\"hey! have u heard the news??\"\n";
 		msgSix.optionAReply = msgSeven;
 		msgSix.optionBReply = msgSeven;
 		msgSix.optionCReply = msgSeven;
@@ -94,9 +94,9 @@ public class TextBank {
 		msgSix.optionBReplyTxt = "mmm. i don't think so...";
 		msgSix.optionCReplyTxt = "lol no. tell me!";
 		msgSix.optionDReplyTxt = "ofc. i've heard enough of it";
-		msgSix.delay = 3.0f;
+		msgSix.delay = 7.5f;
 
-		msgSeven.messageContent = "\"Khloe Kardashian is pregnant!! pic on insta\"";
+		msgSeven.messageContent = "\"Khloe Kardashian is pregnant!! pic on insta\"\n";
 		msgSeven.optionAReply = msgEight;
 		msgSeven.optionBReply = msgEight;
 		msgSeven.optionCReply = msgNine;
@@ -105,9 +105,9 @@ public class TextBank {
 		msgSeven.optionBReplyTxt = "no way!";
 		msgSeven.optionCReplyTxt = "oh lol. that's old news";
 		msgSeven.optionDReplyTxt = "please. idk y u follow that stuff";
-		msgSeven.delay = 3.0f;
+		msgSeven.delay = 4.5f;
 
-		msgEight.messageContent = "\"please tell me yur close\"";
+		msgEight.messageContent = "\"please tell me yur close\"\n";
 		msgEight.optionAReply = msgTen;
 		msgEight.optionBReply = msgTen;
 		msgEight.optionCReply = msgTen;
@@ -116,9 +116,9 @@ public class TextBank {
 		msgEight.optionBReplyTxt = "where should i park";
 		msgEight.optionCReplyTxt = "nope";
 		msgEight.optionDReplyTxt = "5 min";
-		msgEight.delay = 3.0f;
+		msgEight.delay = 7.5f;
 
-		msgNine.messageContent = "\"did you know teens are 4x more likely than adults to crash or almost crash when on a cell phone?\"";
+		msgNine.messageContent = "\"did you know teens are 4x more likely than adults to crash or almost crash when on a cell phone?\"\n";
 		msgNine.optionAReply = msgTen;
 		msgNine.optionBReply = msgTen;
 		msgNine.optionCReply = msgTen;
@@ -127,9 +127,9 @@ public class TextBank {
 		msgNine.optionBReplyTxt = "no way!";
 		msgNine.optionCReplyTxt = "yikes";
 		msgNine.optionDReplyTxt = "¯\\_(ツ)_/¯ ";
-		msgNine.delay = 3.0f;
+		msgNine.delay = 6.5f;
 
-		msgTen.messageContent = "\"I just heard the funniest joke! wanna hear it?\"";
+		msgTen.messageContent = "\"I just heard the funniest joke! wanna hear it?\"\n";
 		msgTen.optionAReply = msgEleven;
 		msgTen.optionBReply = msgTwelve;
 		msgTen.optionCReply = msgTwelve;
@@ -138,9 +138,9 @@ public class TextBank {
 		msgTen.optionBReplyTxt = "ugh. ur jokes are never funny";
 		msgTen.optionCReplyTxt = "mmmm i'll pass";
 		msgTen.optionDReplyTxt = "okay. but it better be good...";
-		msgTen.delay = 3.0f;
+		msgTen.delay = 6.5f;
 
-		msgEleven.messageContent = "\"knock knock\"";
+		msgEleven.messageContent = "\"knock knock\"\n";
 		msgEleven.optionAReply = msgThirteen;
 		msgEleven.optionBReply = msgThirteen;
 		msgEleven.optionCReply = msgThirteen;
@@ -149,9 +149,9 @@ public class TextBank {
 		msgEleven.optionBReplyTxt = "whomst approacheth my abode?";
 		msgEleven.optionCReplyTxt = "no soliciting";
 		msgEleven.optionDReplyTxt = "stahp.";
-		msgEleven.delay = 3.0f;
+		msgEleven.delay = 4.5f;
 
-		msgTwelve.messageContent = "\"Ur gonna hear it anyway. knock knock\"";
+		msgTwelve.messageContent = "\"Ur gonna hear it anyway. knock knock\"\n";
 		msgTwelve.optionAReply = msgThirteen;
 		msgTwelve.optionBReply = msgThirteen;
 		msgTwelve.optionCReply = msgThirteen;
@@ -160,9 +160,9 @@ public class TextBank {
 		msgTwelve.optionBReplyTxt = "whomst approacheth my abode?";
 		msgTwelve.optionCReplyTxt = "no soliciting";
 		msgTwelve.optionDReplyTxt = "stahp.";
-		msgTwelve.delay = 3.0f;
+		msgTwelve.delay = 5.0f;
 
-		msgThirteen.messageContent = "\"Ur car\"";
+		msgThirteen.messageContent = "\"Ur car\"\n";
 		msgThirteen.optionAReply = msgFourteen;
 		msgThirteen.optionBReply = msgFourteen;
 		msgThirteen.optionCReply = msgFourteen;
@@ -171,9 +171,9 @@ public class TextBank {
 		msgThirteen.optionBReplyTxt = "Ur car or my car?";
 		msgThirteen.optionCReplyTxt = "im not doing this";
 		msgThirteen.optionDReplyTxt = "stahp.";
-		msgThirteen.delay = 3.0f;
+		msgThirteen.delay = 5.0f;
 
-		msgFourteen.messageContent = "\"Ur car shouldnt be knocking, you should get that checked out\"";
+		msgFourteen.messageContent = "\"Ur car shouldnt be knocking, you should get that checked out\"\n";
 		msgFourteen.optionAReply = msgOne;
 		msgFourteen.optionBReply = msgOne;
 		msgFourteen.optionCReply = msgOne;
@@ -182,9 +182,9 @@ public class TextBank {
 		msgFourteen.optionBReplyTxt = "wow";
 		msgFourteen.optionCReplyTxt = "hahaha";
 		msgFourteen.optionDReplyTxt = "funny...";
-		msgFourteen.delay = 3.0f;
+		msgFourteen.delay = 5.0f;
 
-		deadEnd.messageContent = "\"DEAD END\"";
+		deadEnd.messageContent = "\"DEAD END\"\n";
 		deadEnd.optionAReply = deadEnd;
 		deadEnd.optionBReply = deadEnd;
 		deadEnd.optionCReply = deadEnd;
