@@ -16,6 +16,7 @@ public class EndCredits : MonoBehaviour {
     public GameObject malePic2;
     public GameObject carPic4;
     public GameObject carPic5;
+    private bool open = true;
 
 
     void printStory()
