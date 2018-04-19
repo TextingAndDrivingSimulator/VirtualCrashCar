@@ -39,6 +39,7 @@ public class Texting : MonoBehaviour {
         mySource.clip = myClip;
 		Debug.Log ("Start() is a go");
 		currentTextMessage = textBank.getStartingMessage ();
+        BlankTextBank(3.0f);
     }
 
 	void Controller_PadClicked (object sender, ClickedEventArgs e)
@@ -91,9 +92,11 @@ public class Texting : MonoBehaviour {
 		displayedMessage = false;
 	}
 	public float lastChangedMessageTime = 0;
-	private bool displayedMessage = false;
+	private bool displayedMessage = true;
 	private float vibrateForThisTimeInterval = 3.0f;
 	private float vibrateUntilTime = 0.0f;
+
+    int counter = 0;
     void Update()
     {
 		myDevice = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost));
@@ -104,11 +107,12 @@ public class Texting : MonoBehaviour {
 			if (!displayedMessage) {
 				textMessages.text = currentTextMessage.FormattedMessage ();
 				mySource.Play();
+                Debug.Log("Ran this");
 				vibrateUntilTime = Time.time + vibrateForThisTimeInterval;
 				displayedMessage = true;
 			}
 
-			if (vibrateUntilTime < Time.time) {
+			if (vibrateUntilTime > Time.time) {
 				VibrateController ();
 			}
 

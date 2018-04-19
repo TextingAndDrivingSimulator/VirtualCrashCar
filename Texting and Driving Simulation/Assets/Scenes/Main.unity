@@ -10759,7 +10759,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
@@ -11411,7 +11411,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &184307127
 Transform:
   m_ObjectHideFlags: 0
@@ -23916,7 +23916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &441602647
 Transform:
   m_ObjectHideFlags: 0
@@ -95257,12 +95257,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1968118746}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 151291b590f97d7408517673a1630290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  port: COM5
+  port: COM3
   baudrate: 9600
   noWheel: 0
 --- !u!82 &1968118753
