@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EndCredits : MonoBehaviour {
 	public Text finalScoreText;
@@ -47,6 +48,7 @@ public class EndCredits : MonoBehaviour {
 		foreach ( int i in CreditManager.victimNumbers ) {
 			this.addToVictims (i);
 		}
+        StartCoroutine(loop());
 	}
 		
 	public void addToVictims(int h)
@@ -99,4 +101,11 @@ public class EndCredits : MonoBehaviour {
 		
 	}
 		
+    IEnumerator loop()
+    {
+        yield return new WaitForSeconds(30);
+        SceneManager.LoadScene(0);
+
+    }
+
 }
