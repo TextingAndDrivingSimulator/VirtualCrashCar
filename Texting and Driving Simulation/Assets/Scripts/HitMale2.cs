@@ -57,6 +57,9 @@ public class HitMale2 : MonoBehaviour
             GetComponent<CapsuleCollider>().enabled = true;
             GetComponent<rotate180>().enabled = false;
 
+            //None.controller
+            this.GetComponent<Animator>().runtimeAnimatorController = null;
+
             StartCoroutine(flashTime(3, PedHit)); //Change the first parameter of flashTime to change the amount of time the text is on.
             StartCoroutine(hitTime());
         }
