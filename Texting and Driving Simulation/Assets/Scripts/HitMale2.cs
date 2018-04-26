@@ -10,6 +10,7 @@ public class HitMale2 : MonoBehaviour
     public Text PedHit;
 	private AudioSource ouch;
 	public GameObject cartoonCar;
+	public UnityStandardAssets.Vehicles.Car.CarController bob;
 
     private void Start()
     {
@@ -47,18 +48,22 @@ public class HitMale2 : MonoBehaviour
             // amount of force determined by speed of car (vary 500 value..?)
 
             // set animator controller to 'none'
+			float speed = bob.CurrentSpeed;
 
-            GetComponent<CapsuleCollider>().enabled = false;
+			//GetComponent<rotate180>().enabled = false;
+			GetComponentInParent<rotate180> ().enabled = false;
+			this.GetComponentInParent<Animator>().runtimeAnimatorController = null;
+
+			//this.GetComponent<Animator>().runtimeAnimatorController = null;
+
+			GetComponent<CapsuleCollider>().enabled = false;
             GetComponent<CharacterController>().enabled = false;
             GetComponent<Rigidbody>().isKinematic = false;
 
-            GetComponent<Rigidbody>().AddForce(transform.forward * 500);
+			GetComponent<Rigidbody>().AddForce(bob.transform.forward * (speed));
             GetComponent<CharacterController>().enabled = true;
             GetComponent<CapsuleCollider>().enabled = true;
-            GetComponent<rotate180>().enabled = false;
 
-            //None.controller
-            this.GetComponent<Animator>().runtimeAnimatorController = null;
 
             StartCoroutine(flashTime(3, PedHit)); //Change the first parameter of flashTime to change the amount of time the text is on.
             StartCoroutine(hitTime());

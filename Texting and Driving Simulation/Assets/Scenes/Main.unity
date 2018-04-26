@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41860926, g: 0.5555527, b: 0.6842196, a: 1}
+  m_IndirectSpecularColor: {r: 0.41862404, g: 0.5551671, b: 0.6838967, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -10759,7 +10759,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
@@ -11411,7 +11411,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &184307127
 Transform:
   m_ObjectHideFlags: 0
@@ -20072,6 +20072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
   cartoonCar: {fileID: 1702990068}
+  bob: {fileID: 0}
 --- !u!114 &349787773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23916,7 +23917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &441602647
 Transform:
   m_ObjectHideFlags: 0
@@ -40582,6 +40583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
   cartoonCar: {fileID: 1702990068}
+  bob: {fileID: 0}
 --- !u!114 &827029915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72591,7 +72593,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400122, guid: fbc0ba27f9a68d4429fb177dc706ae0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.206
+      value: -8.131
       objectReference: {fileID: 0}
     - target: {fileID: 400122, guid: fbc0ba27f9a68d4429fb177dc706ae0d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -72657,10 +72659,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.8342607
+  m_Radius: 0.7
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9026306, z: 0}
+  m_Center: {x: 0, y: 0.8669656, z: 0}
 --- !u!143 &1529974371
 CharacterController:
   m_ObjectHideFlags: 0
@@ -72671,8 +72673,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.9
-  m_Radius: 0.5
+  m_Height: 2
+  m_Radius: 0.7
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -72705,6 +72707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
   cartoonCar: {fileID: 1702990068}
+  bob: {fileID: 1968118749}
 --- !u!54 &1529974374
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -95262,9 +95265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151291b590f97d7408517673a1630290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  port: COM3
+  port: COM5
   baudrate: 9600
-  noWheel: 1
+  noWheel: 0
 --- !u!82 &1968118753
 AudioSource:
   m_ObjectHideFlags: 0
