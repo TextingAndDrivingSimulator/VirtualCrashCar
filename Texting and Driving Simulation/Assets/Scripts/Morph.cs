@@ -9,7 +9,7 @@ public class Morph : MonoBehaviour {
 
     IEnumerator startAnim()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(10);
         anim.SetBool("open", true);
     }
 
