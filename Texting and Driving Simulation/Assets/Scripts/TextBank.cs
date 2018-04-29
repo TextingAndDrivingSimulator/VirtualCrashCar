@@ -74,7 +74,7 @@ public class TextBank {
 		msgFour.optionDReplyTxt = "almost there";
 		msgFour.delay = 4.5f;
 
-		msgFive.messageContent = "\"Well hurry up\"\n";
+		msgFive.messageContent = "\n\"Well, \n hurry up\"";
 		msgFive.optionAReply = msgSix;
 		msgFive.optionBReply = msgSix;
 		msgFive.optionCReply = msgSix;
@@ -85,7 +85,7 @@ public class TextBank {
 		msgFive.optionDReplyTxt = "I'd be there if I weren't texting";
 		msgFive.delay = 4.5f;
 
-		msgSix.messageContent = "\"hey! have u heard the news??\"\n";
+		msgSix.messageContent = "\"hey! \n have u heard the news??\"";
 		msgSix.optionAReply = msgSeven;
 		msgSix.optionBReply = msgSeven;
 		msgSix.optionCReply = msgSeven;
@@ -118,7 +118,7 @@ public class TextBank {
 		msgEight.optionDReplyTxt = "5 min";
 		msgEight.delay = 7.5f;
 
-		msgNine.messageContent = "\"did you know teens are 4x more likely than adults to crash or almost crash when on a cell phone?\"\n";
+		msgNine.messageContent = "\"Ya know teens have 4x the risk vs. adults to crash or almost crash when on a phone?\"";
 		msgNine.optionAReply = msgTen;
 		msgNine.optionBReply = msgTen;
 		msgNine.optionCReply = msgTen;
@@ -212,7 +212,7 @@ public class TextMessage {
 	public float delay = 0;
 
 	public string FormattedMessage() {
-		return messageContent + "\n A) " + this.optionAReplyTxt
+		return messageContent + "\n \n \n A) " + this.optionAReplyTxt
 		+ "\n B) " + this.optionBReplyTxt
 		+ "\n C) " + this.optionCReplyTxt
 		+ "\n D) " + this.optionDReplyTxt;

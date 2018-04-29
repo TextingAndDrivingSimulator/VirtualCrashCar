@@ -40,6 +40,7 @@ public class Texting : MonoBehaviour {
 		Debug.Log ("Start() is a go");
 		currentTextMessage = textBank.getStartingMessage ();
         BlankTextBank(3.0f);
+		textBubble.SetActive (false);
     }
 
 	void Controller_PadClicked (object sender, ClickedEventArgs e)
@@ -90,11 +91,13 @@ public class Texting : MonoBehaviour {
 		textMessages.text = "";
 		lastChangedMessageTime = delay + Time.time;
 		displayedMessage = false;
+		textBubble.SetActive (false);
 	}
 	public float lastChangedMessageTime = 0;
 	private bool displayedMessage = true;
 	private float vibrateForThisTimeInterval = 3.0f;
 	private float vibrateUntilTime = 0.0f;
+	public GameObject textBubble;
 
     int counter = 0;
     void Update()
@@ -106,6 +109,7 @@ public class Texting : MonoBehaviour {
 			
 			if (!displayedMessage) {
 				textMessages.text = currentTextMessage.FormattedMessage ();
+				textBubble.SetActive (true);
 				mySource.Play();
                 Debug.Log("Ran this");
 				vibrateUntilTime = Time.time + vibrateForThisTimeInterval;
