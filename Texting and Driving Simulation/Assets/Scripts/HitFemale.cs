@@ -10,6 +10,7 @@ public class HitFemale : MonoBehaviour
     public Text PedHit;
 	private AudioSource ouch;
 	public GameObject cartoonCar;
+    public UnityStandardAssets.Vehicles.Car.CarController bob;
 
     private void Start()
     {
@@ -43,6 +44,20 @@ public class HitFemale : MonoBehaviour
 
             ouch.Play ();
             GoingOffRoadDemeritCounter.setDemerits(20);
+
+            float speed = bob.CurrentSpeed;
+
+            GetComponent<CharacterController>().enabled = false;
+            this.GetComponent<Animator>().enabled = false;
+            GetComponent<rotate180>().enabled = false;
+
+            GetComponent<CapsuleCollider>().enabled = false;
+            GetComponent<Rigidbody>().isKinematic = false;
+
+            GetComponent<Rigidbody>().AddForce(bob.transform.forward * (speed));
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<CapsuleCollider>().enabled = true;
+
             StartCoroutine(flashTime(3, PedHit)); //Change the first parameter of flashTime to change the amount of time the text is on.
             StartCoroutine(hitTime());
         }

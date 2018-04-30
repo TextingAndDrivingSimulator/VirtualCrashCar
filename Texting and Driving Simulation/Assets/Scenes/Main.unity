@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.41862404, g: 0.5551671, b: 0.6838967, a: 1}
+  m_IndirectSpecularColor: {r: 0.41860926, g: 0.5555527, b: 0.6842196, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -10759,7 +10759,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d95f2804091946f99027c6dc8982033, type: 3}
       propertyPath: m_RootOrder
@@ -11415,7 +11415,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &184307127
 Transform:
   m_ObjectHideFlags: 0
@@ -15267,6 +15267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
   cartoonCar: {fileID: 1702990068}
+  bob: {fileID: 1968118749}
 --- !u!114 &245042691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15311,6 +15312,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!54 &245042694
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245042689}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &251153219 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 36c373404a6674148b156e3398f0320f, type: 3}
@@ -20063,20 +20079,21 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100122, guid: d1e5eab72abe1ec41a144025cf17fa62, type: 3}
   m_PrefabInternal: {fileID: 349787770}
---- !u!114 &349787772
-MonoBehaviour:
+--- !u!54 &349787772
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 349787771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 857cfd6ca5b7efe45af07581e4bfc2dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PedHit: {fileID: 50664071}
-  cartoonCar: {fileID: 1702990068}
-  bob: {fileID: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &349787773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20121,6 +20138,20 @@ CapsuleCollider:
   m_Height: 1.8342607
   m_Direction: 1
   m_Center: {x: 0, y: 0.9026306, z: 0}
+--- !u!114 &349787776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349787771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857cfd6ca5b7efe45af07581e4bfc2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PedHit: {fileID: 50664071}
+  cartoonCar: {fileID: 1702990068}
+  bob: {fileID: 1968118749}
 --- !u!1 &350425808
 GameObject:
   m_ObjectHideFlags: 0
@@ -21037,6 +21068,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
   cartoonCar: {fileID: 1702990068}
+  bob: {fileID: 1968118749}
+--- !u!54 &374108398
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374108393}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &374182565
 GameObject:
   m_ObjectHideFlags: 0
@@ -23921,7 +23968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &441602647
 Transform:
   m_ObjectHideFlags: 0
@@ -30272,6 +30319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PedHit: {fileID: 50664071}
   cartoonCar: {fileID: 1702990068}
+  bob: {fileID: 1968118749}
 --- !u!143 &578163211
 CharacterController:
   m_ObjectHideFlags: 0
@@ -30302,6 +30350,21 @@ CapsuleCollider:
   m_Height: 1.8072901
   m_Direction: 1
   m_Center: {x: 0, y: 0.8468232, z: 0}
+--- !u!54 &578163213
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578163208}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &578173123
 GameObject:
   m_ObjectHideFlags: 0
@@ -36783,7 +36846,6 @@ MonoBehaviour:
   myClip: {fileID: 8300000, guid: 48d4a4e6753c85f4ea2a21e4ed72a477, type: 3}
   mySource: {fileID: 732834300}
   lastChangedMessageTime: 0
-  textBubble: {fileID: 1302341952}
 --- !u!82 &732834300
 AudioSource:
   m_ObjectHideFlags: 0
@@ -40693,20 +40755,21 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100122, guid: daf06509ab52589449cb7fc34d6c4269, type: 3}
   m_PrefabInternal: {fileID: 827029912}
---- !u!114 &827029914
-MonoBehaviour:
+--- !u!54 &827029914
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 827029913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 857cfd6ca5b7efe45af07581e4bfc2dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PedHit: {fileID: 50664071}
-  cartoonCar: {fileID: 1702990068}
-  bob: {fileID: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &827029915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40751,6 +40814,20 @@ CapsuleCollider:
   m_Height: 1.8342607
   m_Direction: 1
   m_Center: {x: 0, y: 0.9026306, z: 0}
+--- !u!114 &827029918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827029913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857cfd6ca5b7efe45af07581e4bfc2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PedHit: {fileID: 50664071}
+  cartoonCar: {fileID: 1702990068}
+  bob: {fileID: 1968118749}
 --- !u!1 &827250453
 GameObject:
   m_ObjectHideFlags: 0
@@ -44003,7 +44080,6 @@ MonoBehaviour:
   myClip: {fileID: 8300000, guid: 48d4a4e6753c85f4ea2a21e4ed72a477, type: 3}
   mySource: {fileID: 910750092}
   lastChangedMessageTime: 0
-  textBubble: {fileID: 0}
 --- !u!114 &910750087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54781,7 +54857,6 @@ MonoBehaviour:
   myClip: {fileID: 8300000, guid: 48d4a4e6753c85f4ea2a21e4ed72a477, type: 3}
   mySource: {fileID: 1180543740}
   lastChangedMessageTime: 0
-  textBubble: {fileID: 1346859744}
 --- !u!222 &1180543742
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -95796,7 +95871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   port: COM3
   baudrate: 9600
-  noWheel: 0
+  noWheel: 1
 --- !u!82 &1968118753
 AudioSource:
   m_ObjectHideFlags: 0
