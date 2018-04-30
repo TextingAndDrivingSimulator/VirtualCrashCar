@@ -47,14 +47,14 @@ public class HitMale2 : MonoBehaviour
 
 			float speed = bob.CurrentSpeed;
 
-            this.GetComponent<Animator>().runtimeAnimatorController = null;
+            GetComponent<CharacterController>().enabled = false;
+            this.GetComponent<Animator>().enabled = false;
             GetComponent<rotate180>().enabled = false;
 
-			GetComponent<CapsuleCollider>().enabled = false;
-            GetComponent<CharacterController>().enabled = false;
+            GetComponent<CapsuleCollider>().enabled = false;
             GetComponent<Rigidbody>().isKinematic = false;
 
-			GetComponent<Rigidbody>().AddForce(transform.forward * (speed));
+			GetComponent<Rigidbody>().AddForce(bob.transform.forward * (speed));
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<CapsuleCollider>().enabled = true;
 
@@ -63,9 +63,4 @@ public class HitMale2 : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-
-    }
-
-    }
+}
